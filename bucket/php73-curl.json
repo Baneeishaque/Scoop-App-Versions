@@ -1,0 +1,24 @@
+{
+    "version": "7.3.33",
+    "description": "PHP supports libcurl, a library created by Daniel Stenberg, that allows you to connect and communicate to many different types of servers with many different types of protocols. libcurl currently supports the http, https, ftp, gopher, telnet, dict, file, and ldap protocols. libcurl also supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading (this can also be done with PHP's ftp extension), HTTP form based upload, proxies, cookies, and user+password authentication",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    (Get-Content \"$(appdir php73)\\current\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension=curl)', '$1' } | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate curl manually!\"",
+        "}"
+    ],
+    "post_uninstall": [],
+    "notes": [
+        "cURL is already bundled with PHP 7.3!"
+    ]
+}
