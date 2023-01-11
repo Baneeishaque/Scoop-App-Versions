@@ -1,0 +1,48 @@
+{
+    "version": "7.3.33",
+    "description": "PHP is a general-purpose scripting language geared toward web development.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73",
+        "main/apache",
+        "versions-fork/php73-curl",
+        "versions-fork/php73-exif",
+        "versions-fork/php73-fileinfo",
+        "versions-fork/php73-ftp",
+        "versions-fork/php73-gd2",
+        "versions-fork/php73-imagick",
+        "versions-fork/php73-intl",
+        "versions-fork/php73-mbstring",
+        "versions-fork/php73-memcache",
+        "versions-fork/php73-mysqli",
+        "versions-fork/php73-opcache",
+        "versions-fork/php73-openssl",
+        "versions-fork/php73-redis",
+        "versions-fork/php73-sockets",
+        "versions-fork/php73-sodium",
+        "versions-fork/php73-ssh2",
+        "versions-fork/php73-xdebug"
+    ],
+    "suggest": {
+        "phpstorm": "extras/phpstorm"
+    },
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=sodium', 'extension=sodium') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate sodium manually!\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=sodium', ';extension=sodium') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
+    "notes": [
+        "WordPress (WP or WordPress.org) is a free and open-source content management system (CMS) written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS.",
+        "Register the PHP handler with Apache: iex (new-object net.webclient).downloadstring('https://gist.githubusercontent.com/nilkesede/c98a275b80b6d373131df82eaba96c63/raw/apache-php-init.ps1')"
+    ]
+}
