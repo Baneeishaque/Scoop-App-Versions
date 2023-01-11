@@ -1,6 +1,6 @@
 {
     "version": "3.1.6-7.3",
-    "description": "A popular general-purpose scripting language that is especially suited to web development. (version 7.3)",
+    "description": "Xdebug is an extension for PHP, and provides a range of features to improve the PHP development experience.",
     "homepage": "https://xdebug.org/",
     "license": {
         "identifier": "Xdebug-1.01",
