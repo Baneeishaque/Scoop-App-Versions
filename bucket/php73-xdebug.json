@@ -34,10 +34,6 @@
         "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
         "Remove-Item \"$phpconfd\\xdebug.ini\""
     ],
-    "notes": [
-        "Xdebug is already enabled if PHP 7.3 was installed through scoop!",
-        "Otherwise add '$dir\\php_xdebug.dll' to your php.ini"
-    ],
     "checkver": {
         "url": "https://xdebug.org/download/historical",
         "regex": "php_xdebug-([\\d.]+-7.3)-vc15-x86_64.dll"
