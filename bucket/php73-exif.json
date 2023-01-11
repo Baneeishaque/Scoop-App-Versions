@@ -1,0 +1,26 @@
+{
+    "version": "7.3.33",
+    "description": "With the exif extension you are able to work with image meta data. For example, you may use exif functions to read meta data of pictures taken from digital cameras by working with information stored in the headers. These are commonly found in JPEG and TIFF images.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=exif', 'extension=exif') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate exif manually!\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=exif', ';extension=exif') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
+    "notes": [
+        "Exchangeable image information is already bundled with PHP 7.3!"
+    ]
+}
