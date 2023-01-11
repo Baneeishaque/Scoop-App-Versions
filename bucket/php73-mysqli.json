@@ -1,0 +1,26 @@
+{
+    "version": "7.3.33",
+    "description": "The mysqli extension allows you to access the functionality provided by MySQL 4.1 and above. More information about the MySQL Database server can be found at » http://www.mysql.com/. An overview of software available for using MySQL from PHP can be found at Overview. Documentation for MySQL can be found at » http://dev.mysql.com/doc/. Parts of this documentation included from MySQL manual with permissions of Oracle Corporation. Examples use either the » world or » sakila database, which are freely available.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=mysqli', 'extension=mysqli') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate mysqli manually!\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=mysqli', ';extension=mysqli') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
+    "notes": [
+        "MySQL Improved Extension is already bundled with PHP 7.3!"
+    ]
+}
