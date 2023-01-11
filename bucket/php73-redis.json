@@ -1,0 +1,37 @@
+{
+    "version": "5.3.5-7.3",
+    "description": "A PHP extension for Redis",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://windows.php.net/downloads/pecl/releases/redis/5.3.5/php_redis-5.3.5-7.3-ts-vc15-x64.zip",
+            "hash": "5bdcbd63cf701b3d435e654cd9c72247bf48a02b105e7892fb7934b0184943bf"
+        },
+        "32bit": {
+            "url": "https://windows.php.net/downloads/pecl/releases/redis/5.3.5/php_redis-5.3.5-7.3-ts-vc15-x86.zip",
+            "hash": "fd9f3a829fff7c4555cfebb50c9ef4bf0ea89c08f67a304d15838da51ef44c35"
+        }
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "post_install": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "$ini = \"extension=$dir\\php_redis.dll\"",
+        "if(!(test-path $phpconfd\\redis.ini)) {",
+        "    Write-Output \"Enabling extension $(Convert-Path $phpconfd)\\redis.ini\"",
+        "    Add-Content -Value $ini -Path \"$phpconfd\\redis.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate php_redis manually! Add the following:`n\"",
+        "    Write-Host -f Cyan \"$ini`n`n\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "Remove-Item \"$phpconfd\\redis.ini\""
+    ]
+}
