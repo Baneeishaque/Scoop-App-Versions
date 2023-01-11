@@ -1,0 +1,26 @@
+{
+    "version": "7.3.33",
+    "description": "Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. Its goal is to provide all of the core operations needed to build higher-level cryptographic tools.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=sodium', 'extension=sodium') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate sodium manually!\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=sodium', ';extension=sodium') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
+    "notes": [
+        "Sockets is already bundled with PHP 7.3!"
+    ]
+}
