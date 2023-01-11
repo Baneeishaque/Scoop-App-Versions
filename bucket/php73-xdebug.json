@@ -27,6 +27,10 @@
         "    Write-Host -f Cyan \"$ini`n`n\"",
         "}"
     ],
+    "post_uninstall": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "Remove-Item \"$phpconfd\\xdebug.ini\""
+    ],
     "notes": [
         "Xdebug is already enabled if PHP 7.3 was installed through scoop!",
         "Otherwise add '$dir\\php_xdebug.dll' to your php.ini"
