@@ -1,0 +1,26 @@
+{
+    "version": "7.3.33",
+    "description": "This extension binds functions of » OpenSSL library for symmetric and asymmetric encryption and decryption, PBKDF2, PKCS7, PKCS12, X509 and other crypto operations. In addition to that it provides implementation of TLS streams. OpenSSL offers many features that this module currently doesn't support. Some of these may be added in the future.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url": "https://windows.php.net/",
+    "post_install": [
+        "if (Test-Path \"$(appdir php73)\") {",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=openssl', 'extension=openssl') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate openssl manually!\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=openssl', ';extension=openssl') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
+    "notes": [
+        "OpenSSL is already bundled with PHP 7.3!"
+    ]
+}
