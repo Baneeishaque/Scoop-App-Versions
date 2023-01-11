@@ -1,0 +1,31 @@
+{
+    "version": "7.3.33",
+    "description": "The functions in this extension implement client access to files servers speaking the File Transfer Protocol (FTP) as defined in » http://www.faqs.org/rfcs/rfc959. This extension is meant for detailed access to an FTP server providing a wide range of control to the executing script. If you only wish to read from or write to a file on an FTP server, consider using the ftp:// wrapper with the filesystem functions which provide a simpler and more intuitive interface.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url":"https://windows.php.net/",
+    "post_install": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "$ini = \"extension=ftp\"",
+        "if(!(test-path $phpconfd\\ftp.ini)) {",
+        "    Write-Output \"Enabling extension $(Convert-Path $phpconfd)\\ftp.ini\"",
+        "    Add-Content -Value $ini -Path \"$phpconfd\\ftp.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate ftp manually! Add the following:`n\"",
+        "    Write-Host -f Cyan \"$ini`n`n\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "Remove-Item \"$phpconfd\\ftp.ini\""
+    ],
+    "notes": [
+        "FTP is already bundled with PHP 7.3!"
+    ]
+}
