@@ -1,0 +1,31 @@
+{
+    "version": "7.3.33",
+    "description": "OPcache improves PHP performance by storing precompiled script bytecode in shared memory, thereby removing the need for PHP to load and parse scripts on each request.",
+    "homepage": "https://windows.php.net/",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "versions/php73"
+    ],
+    "url":"https://windows.php.net/",
+    "post_install": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "$ini = \"zend_extension=opcache`n[opcache]`nopcache.enable=On`nopcache.enable_cli=On\"",
+        "if(!(test-path $phpconfd\\opcache.ini)) {",
+        "    Write-Output \"Enabling extension $(Convert-Path $phpconfd)\\opcache.ini\"",
+        "    Add-Content -Value $ini -Path \"$phpconfd\\opcache.ini\"",
+        "} else {",
+        "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate opcache manually! Add the following:`n\"",
+        "    Write-Host -f Cyan \"$ini`n`n\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
+        "Remove-Item \"$phpconfd\\opcache.ini\""
+    ],
+    "notes": [
+        "OPcache is already bundled with PHP 7.3!"
+    ]
+}
