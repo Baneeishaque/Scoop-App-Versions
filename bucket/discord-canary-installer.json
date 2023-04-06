@@ -8,9 +8,7 @@
     },
     "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.59/DiscordCanarySetup.exe",
     "hash": "e7e604101e3c3915c7b713b0ac9f6069148e7bf9bc55b39a534cb50f8ab561a5",
-    "installer": {
-        
-    },
+    "installer": {},
     "uninstaller": {
         "script": "Start-Process -FilePath \"$env:LOCALAPPDATA\\DiscordCanary\\Update.exe\" -ArgumentList \"--uninstall\" -Wait"
     },
