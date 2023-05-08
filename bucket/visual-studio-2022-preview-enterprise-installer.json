@@ -7,7 +7,6 @@
     "hash": "95a203aba768dde3a5760695c5040906c19ebe68ea0f79112d84e952eeb70415",
     "installer": {
         "args": [
-            "--nocache",
             "--removeOos=true",
             "--passive",
             "--norestart",
