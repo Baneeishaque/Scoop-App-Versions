@@ -26,7 +26,7 @@
             "--wait"
         ]
     },
-    "post_uninstall": "Start-Process -FilePath \"$Env:Programfiles\\Microsoft Visual Studio\\Installer\\vs_installer.exe\" -ArgumentList \"/uninstall\" -Wait",
+    "post_uninstall": "Start-Process -FilePath \"${Env:ProgramFiles(x86)}\\Microsoft Visual Studio\\Installer\\vs_installer.exe\" -ArgumentList \"/uninstall\" -Wait",
     "checkver": {
         "url": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-preview",
         "regex": "Visual Studio 2022 version ((?<major>[\\d.]+) Preview (?<minor>\\d\\d?))",
