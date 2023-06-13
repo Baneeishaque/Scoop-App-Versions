@@ -1,5 +1,5 @@
 {
-    "version": "8.0.100-preview.4.23260.5",
+    "version": "8.0.100-preview.5.23303.2",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.4.23260.5/dotnet-sdk-8.0.100-preview.4.23260.5-win-x64.exe#/dotnet-sdk-preview-win.exe",
-            "hash": "sha512:396b23a3964f8a6b094e083ef03e9c2266a806cce275b37454a09f762dc8ed6779e12131182807de56ade22968cf1300ba6e2fb9c31044a1b1a79bcdcc048272"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.5.23303.2/dotnet-sdk-8.0.100-preview.5.23303.2-win-x64.exe#/dotnet-sdk-preview-win.exe",
+            "hash": "sha512:e9782b344c58b9095a209934206aa6d8329d1c850e625ac89d42866a313dca19ecd1da3b83002a33ac880e482aa3bc24cdd14168b70147457ecd7c62c33f5add"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.4.23260.5/dotnet-sdk-8.0.100-preview.4.23260.5-win-x86.exe#/dotnet-sdk-preview-win.exe",
-            "hash": "sha512:1fd2f1e3ccebf3272604b7f9aa49de0e94d32e607c381ecba7375bd1f04cee8fd1e5264216ce9175aff01a2e9256b21a1a61a2391fd2fc6f786d473206b1fc3e"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.5.23303.2/dotnet-sdk-8.0.100-preview.5.23303.2-win-x86.exe#/dotnet-sdk-preview-win.exe",
+            "hash": "sha512:262b0bd3e30fc5afb200f716d2800051785d2018c869cb3567f5305d87b4c0c6390cb8910ca83126efd0d34207020ca3c6bf8ca4ff3c4779f62731955578b563"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.4.23260.5/dotnet-sdk-8.0.100-preview.4.23260.5-win-arm64.exe#/dotnet-sdk-preview-win.exe",
-            "hash": "sha512:439c40e7f7e3508a7e060cfc355f90ef3317dffa06e0cfdcc155fba4aaf84115218d7f02330979f35e1ba5ee2dccba2f4dd178a5169c50b370914847b1a077ae"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-preview.5.23303.2/dotnet-sdk-8.0.100-preview.5.23303.2-win-arm64.exe#/dotnet-sdk-preview-win.exe",
+            "hash": "sha512:477138423baa0a0673a65022bf92575bf9dfc4e6136eb4fbd4a82c4ac39ec5d3adf7589cca2fac98fd667e4a0a3268df17132cfbd5bc8f9cc46f06636e2354be"
         }
     },
     "installer": {
