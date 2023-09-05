@@ -1,5 +1,5 @@
 {
-    "version": "6",
+    "version": "1.4.6",
     "description": "Manage multiple Rubies on Windows.",
     "homepage": "https://github.com/ccmywish/rbenv-for-windows",
     "license": "MIT",
