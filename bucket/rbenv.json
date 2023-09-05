@@ -1,10 +1,10 @@
 {
-    "version": "1.4.6",
+    "version": "6",
     "description": "Manage multiple Rubies on Windows.",
     "homepage": "https://github.com/ccmywish/rbenv-for-windows",
     "license": "MIT",
     "url": "https://github.com/ccmywish/rbenv-for-windows/raw/main/tools/install.ps1",
-    "hash": "b268832be192673416099ba2afd7b81f4ef66dbf95c2fdd307e0d94b03682659",
+    "hash": "e8ee43cff723837df45c23006e731f059dc448c4c89ac91143ce86087a8e9ae7",
     "installer": {
         "script": [
             "$env:RBENV_ROOT = \"$dir\\rbenv_root\"",
