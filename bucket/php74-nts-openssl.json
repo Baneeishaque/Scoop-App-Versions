@@ -1,0 +1,35 @@
+{
+    "version": "7.4.32",
+    "description": "This extension binds functions of OpenSSL library for symmetric and asymmetric encryption and decryption, PBKDF2, PKCS7, PKCS12, X509 and other crypto operations. In addition to that it provides implementation of TLS streams (version 7.4).",
+    "homepage": "https://www.php.net/manual/en/book.openssl.php",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": "php74-nts",
+    "installer": {
+        "script": [
+            "$ini = \"extension=openssl`n`n[openssl]`n;openssl.cafile=`n;openssl.capath=\"",
+            "Set-Content -Value $ini -Path \"$(scoop prefix php74-nts)\\cli\\conf.d\\openssl.ini\""
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$(scoop prefix php74-nts)\\cli\\conf.d\\openssl.ini\""
+    },
+    "checkver": {
+        "script": [
+            "$latestVersion = Select-String -InputObject $(Invoke-WebRequest \"https://windows.php.net/download/\").Content -Pattern \"php-(7\\.4\\.\\d+)-nts-Win32-(v.\\d+)+-x86\\.zip\" | Foreach-Object { $_.Matches }",
+            "if ($null -eq $latestVersion) {",
+            "$latestArchievedVersion = $(Select-String -InputObject $(Invoke-WebRequest \"https://windows.php.net/downloads/releases/archives/\").Content -Pattern \"php-(7\\.4\\.\\d+)-nts-Win32-(v.\\d+)+-x86\\.zip\" -AllMatches | Foreach-Object { $_.Matches } | Get-Unique | Sort-Object { [System.Version]$_.Groups[1].Value })[-1]",
+            "Write-Output \"$($latestArchievedVersion.Groups[1].Value)\"",
+            "}",
+            "else {",
+            "Write-Output \"$($latestVersion.Groups[1].Value)\"",
+            "}"
+        ],
+        "regex": "(?<version>.+)"
+    },
+    "autoupdate": {
+
+    }
+}
