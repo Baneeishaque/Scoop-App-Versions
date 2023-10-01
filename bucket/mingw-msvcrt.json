@@ -1,17 +1,17 @@
 {
-    "version": "13.1.0-rt_v11-rev1",
+    "version": "13.2.0-rt_v11-rev0",
     "description": "Minimalistic GNU for Windows is a runtime environment for GCC, GDB, make and related binutils (MSVCRT Build Varient).",
     "homepage": "https://www.mingw-w64.org",
     "license": "ZPL-2.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.1.0-rt_v11-rev1/x86_64-13.1.0-release-posix-seh-msvcrt-rt_v11-rev1.7z",
-            "hash": "6b41fdf246756c04d2ac413d8835e347ffc18fdeda265f5310ac6aeb3c1dbbcf",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev0.7z",
+            "hash": "a870fc5fecf61ea3d0097b95020447641312f72817ce9039bc53b8db5452e490",
             "extract_dir": "mingw64"
         },
         "32bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.1.0-rt_v11-rev1/i686-13.1.0-release-posix-dwarf-msvcrt-rt_v11-rev1.7z",
-            "hash": "7b0ce4cfd3b564fa22d64dfef11eaa30238578e18f170bd2d1302fa78f460eee",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/i686-13.2.0-release-posix-dwarf-msvcrt-rt_v11-rev0.7z",
+            "hash": "bad31af1740772c429fe7d8f7d2cd7aed72a2a6b535152bfd6db4c405f7f0204",
             "extract_dir": "mingw32"
         }
     },
