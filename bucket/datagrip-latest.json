@@ -1,0 +1,76 @@
+{
+    "version": "233.9102.70",
+    "description": "Cross-Platform IDE for Databases & SQL by JetBrains (Latest).",
+    "homepage": "https://www.jetbrains.com/datagrip/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "url": "https://download.jetbrains.com/datagrip/datagrip-233.9102.70.win.zip",
+    "hash": "f21818742f90127e924e48b53f4e00cd952385ead40312c4f685250173ffccfc",
+    "extract_to": "IDE",
+    "installer": {
+        "script": [
+            "& \"$bucketsdir\\versions\\scripts\\jetbrains\\portable.ps1\" $dir $persist_dir",
+            "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse"
+        ]
+    },
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "IDE\\bin\\datagrip64.exe",
+                    "datagrip"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "IDE\\bin\\datagrip64.exe",
+                    "JetBrains\\DataGrip (Latest)"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "IDE\\bin\\datagrip.exe",
+            "shortcuts": [
+                [
+                    "IDE\\bin\\datagrip.exe",
+                    "JetBrains\\DataGrip (Latest)"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "IDE\\bin\\idea.properties",
+        "IDE\\bin\\idea.exe.vmoptions",
+        "IDE\\bin\\idea64.exe.vmoptions",
+        "profile"
+    ],
+    "checkver": {
+        "script": [
+            "$latestRelease = Invoke-RestMethod -Uri \"https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=release\"",
+            "$latestRc = Invoke-RestMethod -Uri \"https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=rc\"",
+            "$latestEap = Invoke-RestMethod -Uri \"https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=eap\"",
+            "if (([System.Version]$latestRelease.DG.build -gt [System.Version]$latestRc.DG.build) -and ([System.Version]$latestRelease.DG.build -gt [System.Version]$latestEap.DG.build)) {",
+            "$latestBuildNumber = $latestRelease.DG.build",
+            "$latestRelease = $latestRelease.DG.version",
+            "}",
+            "elseif (([System.Version]$latestRc.DG.build -gt [System.Version]$latestRelease.DG.build) -and ([System.Version]$latestRc.DG.build -gt [System.Version]$latestEap.DG.build)) {",
+            "$latestRelease = $latestRc.DG.build",
+            "$latestBuildNumber = $latestRelease",
+            "}",
+            "else {",
+            "$latestRelease = $latestEap.DG.build",
+            "$latestBuildNumber = $latestRelease",
+            "}",
+            "Write-Output \"$latestBuildNumber $latestRelease\""
+        ],
+        "regex": "(?<version>[\\d.]+) (?<release>[\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/datagrip/datagrip-$matchRelease.win.zip",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
