@@ -1,10 +1,10 @@
 {
-    "version": "17.8.2",
+    "version": "17.8.3",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : .net desktop development, Workload Description : build wpf, windows forms, and console applications using c#, visual basic, and f# with .net and .net framework.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "289f3dd85f731c50f17a1b1d6b6a29ede4a059be6d07f38641808a962cc293fb",
+    "hash": "3e1f54fd00dff8bb6616a0aa311edfa0e6f9724a3ba91058d502851c1a1627e8",
     "depends": "visual-studio-2022-preview-enterprise-installer",
     "installer": {
         "args": [
