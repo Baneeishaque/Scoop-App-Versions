@@ -1,10 +1,10 @@
 {
-    "version": "17.8.3",
+    "version": "17.8.4",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : .net multi-platform app ui development, Workload Description : build android, ios, windows, and mac apps from a single codebase using c# with .net maui.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "3e1f54fd00dff8bb6616a0aa311edfa0e6f9724a3ba91058d502851c1a1627e8",
+    "hash": "2c88ebaaa4e717f5c1fc446c45dc99b116b076077cea982343e83e3865b6d8b5",
     "depends": "visual-studio-2022-preview-enterprise-installer",
     "installer": {
         "args": [
