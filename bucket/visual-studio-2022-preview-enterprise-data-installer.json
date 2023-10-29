@@ -1,11 +1,10 @@
 {
-    "version": "17.8.5",
+    "version": "17.6.6",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : data storage and processing, Workload Description : connect, develop, and test data solutions with sql server, azure data lake, or hadoop.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "6332b94cd844b80b2ea11590d7313f8d11b5f411b706b0948790ab45643ff329",
-    "depends": "visual-studio-2022-preview-enterprise-installer",
+    "hash": "95a203aba768dde3a5760695c5040906c19ebe68ea0f79112d84e952eeb70415",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.data",
@@ -17,14 +16,10 @@
         "keep": true
     },
     "uninstaller": {
-        "file": "vs_enterprise.exe",
-        "args": [
-            "--remove=Microsoft.VisualStudio.Workload.data",
-            "--channelId=VisualStudio.17.Preview",
-            "--productId=Microsoft.VisualStudio.Product.Enterprise",
-            "--passive",
-            "--norestart",
-            "--wait"
+        "script": [
+            "Start-Process -FilePath \"$dir\\vs_enterprise.exe\" -ArgumentList \"--remove=Microsoft.VisualStudio.Workload.data;includeRecommended\", \"--channelId=VisualStudio.17.Preview\", \"--productId=Microsoft.VisualStudio.Product.Enterprise\", \"--passive\", \"--norestart\", \"--wait\" -Wait",
+            "Start-Process -FilePath \"$dir\\vs_enterprise.exe\" -ArgumentList \"uninstall\", \"--channelId=VisualStudio.17.Preview\", \"--productId=Microsoft.VisualStudio.Product.Enterprise\", \"--passive\", \"--norestart\", \"--wait\" -Wait",
+            "Start-Process -FilePath \"${Env:ProgramFiles(x86)}\\Microsoft Visual Studio\\Installer\\vs_installer.exe\" -ArgumentList \"/uninstall\" -Wait"
         ]
     },
     "checkver": {

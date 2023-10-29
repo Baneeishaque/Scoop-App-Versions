@@ -5,7 +5,6 @@
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
     "hash": "6332b94cd844b80b2ea11590d7313f8d11b5f411b706b0948790ab45643ff329",
-    "depends": "visual-studio-2022-preview-enterprise-installer",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.node",
@@ -17,14 +16,10 @@
         "keep": true
     },
     "uninstaller": {
-        "file": "vs_enterprise.exe",
-        "args": [
-            "--remove=Microsoft.VisualStudio.Workload.node",
-            "--channelId=VisualStudio.17.Preview",
-            "--productId=Microsoft.VisualStudio.Product.Enterprise",
-            "--passive",
-            "--norestart",
-            "--wait"
+        "script": [
+            "Start-Process -FilePath \"$dir\\vs_enterprise.exe\" -ArgumentList \"--remove=Microsoft.VisualStudio.Workload.node;includeRecommended\", \"--channelId=VisualStudio.17.Preview\", \"--productId=Microsoft.VisualStudio.Product.Enterprise\", \"--passive\", \"--norestart\", \"--wait\" -Wait",
+            "Start-Process -FilePath \"$dir\\vs_enterprise.exe\" -ArgumentList \"uninstall\", \"--channelId=VisualStudio.17.Preview\", \"--productId=Microsoft.VisualStudio.Product.Enterprise\", \"--passive\", \"--norestart\", \"--wait\" -Wait",
+            "Start-Process -FilePath \"${Env:ProgramFiles(x86)}\\Microsoft Visual Studio\\Installer\\vs_installer.exe\" -ArgumentList \"/uninstall\" -Wait"
         ]
     },
     "checkver": {
