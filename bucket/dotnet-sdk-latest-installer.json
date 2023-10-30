@@ -1,0 +1,55 @@
+{
+    "version": "8.0.100-rc.2.23502.2",
+    "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
+    "homepage": "https://www.microsoft.com/net/",
+    "license": "MIT",
+    "suggest": {
+        "Visual C++ Redistributable": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:f4c4ebdaa684b2f7cee1b0034749dcde2a6c8b9a5e45fe4b6f1ff4c918367b6e59d23ec1f70a2db3a7ec9867f85507615aa0467a35406b08ed925ec5abf4b49a"
+        },
+        "32bit": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:481565ac45237b2a888aa2abaf11996bd5dba9f78c41b74ee66b3821b1c671e67ec7f5577fe98b1dc685943f461416bb1db89f58c69303917a019c6b80fc9b0b"
+        },
+        "arm64": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:19acafb5c7838ebde5baa9e593e36e328f5ebca659e13f6d979319dbff7709a940e1060d142f9faf5f85f23f181b2ecfedc3f3d2ae612f29bdbe88d312bd811a"
+        }
+    },
+    "installer": {
+        "args": "/passive",
+        "keep": true
+    },
+    "uninstaller": {
+        "file": "dotnet-sdk-preview-win.exe",
+        "args": [
+            "/uninstall",
+            "/passive"
+        ]
+    },
+    "checkver": {
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
+        "jp": "$.releases-index[0]",
+        "regex": "latest-release\": \"(?<release>[\\d.]+-rc.\\d)[\\s\\S]+latest-sdk\": \"([\\d.]+-rc.[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.exe#/dotnet-sdk-latest-win.exe"
+            },
+            "32bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.exe#/dotnet-sdk-latest-win.exe"
+            },
+            "arm64": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-arm64.exe#/dotnet-sdk-latest-win.exe"
+            }
+        },
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchRelease-sha.txt"
+        }
+    }
+}
