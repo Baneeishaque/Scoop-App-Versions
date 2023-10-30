@@ -1,17 +1,17 @@
 {
     "##": "Multiple components under various open source licenses. Included HTTPS Everywhere extension is the strictest.",
-    "version": "13.0a2",
+    "version": "13.0a6",
     "description": "Web browser that connects to the internet via the Tor anonymity network (Alpha Build Varient)",
     "homepage": "https://www.torproject.org/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://dist.torproject.org/torbrowser/13.0a2/torbrowser-install-win64-13.0a2_ALL.exe",
-            "hash": "a3cdde5388d36e62bca9111344520b0810101fb77e59dfefadd8495a94fa1661"
+            "url": "https://dist.torproject.org/torbrowser/13.0a6/tor-browser-portable-windows-x86_64-13.0a6.exe",
+            "hash": "f5dfc9a17b12d01e01fd1063dbd8bbef93060e5db96c1b0525bd678ec610d107"
         },
         "32bit": {
-            "url": "https://dist.torproject.org/torbrowser/13.0a2/torbrowser-install-13.0a2_ALL.exe",
-            "hash": "2be0247beb8bc5afbde5226a00af787598af5139d37b951cd0f1aa9a62824056"
+            "url": "https://dist.torproject.org/torbrowser/13.0a6/tor-browser-portable-windows-i686-13.0a6.exe",
+            "hash": "7b2570088994253e1e1059c09685e335afb7b3d2a9c12baf4abfd8cd0f78adb9"
         }
     },
     "installer": {
@@ -43,19 +43,16 @@
     ],
     "checkver": {
         "url": "https://www.torproject.org/download/alpha/",
-        "regex": "torbrowser-install-(.+)_ALL\\.exe\">32"
+        "regex": "tor-browser-portable-windows-x86_64-(.+)\\.exe\">64"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dist.torproject.org/torbrowser/$version/torbrowser-install-win64-$version_ALL.exe"
+                "url": "https://dist.torproject.org/torbrowser/$version/tor-browser-portable-windows-x86_64-$version.exe"
             },
             "32bit": {
-                "url": "https://dist.torproject.org/torbrowser/$version/torbrowser-install-$version_ALL.exe"
+                "url": "https://dist.torproject.org/torbrowser/$version/tor-browser-portable-windows-i686-$version.exe"
             }
-        },
-        "hash": {
-            "url": "$baseurl/sha256sums-signed-build.txt"
         }
     }
 }
