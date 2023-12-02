@@ -1,5 +1,5 @@
 {
-    "version": "8.0.100-rc.2.23502.2",
+    "version": "8.0.100",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:f4c4ebdaa684b2f7cee1b0034749dcde2a6c8b9a5e45fe4b6f1ff4c918367b6e59d23ec1f70a2db3a7ec9867f85507615aa0467a35406b08ed925ec5abf4b49a"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:248acec95b381e5302255310fb9396267fd74a4a2dc2c3a5989031969cb31f8270cbd14bda1bc0352ac90f8138bddad1a58e4af1e56cc4a1613b1cf2854b518e"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:481565ac45237b2a888aa2abaf11996bd5dba9f78c41b74ee66b3821b1c671e67ec7f5577fe98b1dc685943f461416bb1db89f58c69303917a019c6b80fc9b0b"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:6ba1d4b2223f4d81055218d1b31fbb3839daf95ac5a063618073cf55badfd7614f1a672552cdf82c1d5aaadd27b0e68497d8e6317ec925daabe20aa68776c9d8"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100-rc.2.23502.2/dotnet-sdk-8.0.100-rc.2.23502.2-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:19acafb5c7838ebde5baa9e593e36e328f5ebca659e13f6d979319dbff7709a940e1060d142f9faf5f85f23f181b2ecfedc3f3d2ae612f29bdbe88d312bd811a"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:d1231fe14a0ed93a62f3465397c191fa3f49382a5657ca3b5f5a2f592087495eb1d03a962e36b47a4641c596f40f7371d3e530fd3ab94e9dfa705cabbbd288c6"
         }
     },
     "installer": {
