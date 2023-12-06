@@ -1,13 +1,13 @@
 {
-    "version": "233.11799.209",
+    "version": "233.11799.259",
     "description": "Cross-Platform IDE for Python by JetBrains (Latest).",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/python/pycharm-professional-233.11799.209.exe#/dl.7z",
-    "hash": "a7a0be8e28c1a2c01c01827fe79acd5f745d84983cf8f7ebdf3224dc6939529a",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-2023.3.exe#/dl.7z",
+    "hash": "85724ad8189807fd9606b41eff06f9befe5523d339ac91af24b45953995aa12d",
     "extract_to": "IDE",
     "installer": {
         "script": [
