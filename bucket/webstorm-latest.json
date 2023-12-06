@@ -1,13 +1,13 @@
 {
-    "version": "233.11799.192",
+    "version": "233.11799.229",
     "description": "Cross-Platform IDE for JavaScript by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-233.11799.192.exe#/dl.7z",
-    "hash": "d86a673b6c2dcbbf78ffa75725ab84e8c1e238df2f3ffcc44c3975ecec51b104",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2023.3.exe#/dl.7z",
+    "hash": "db94ebf5f4abf8eae9586bf348a37fc205d8aa367a5b3a52f7c903222cb7d91d",
     "extract_to": "IDE",
     "installer": {
         "script": [
