@@ -41,7 +41,14 @@
             "$otherInstalledVisualStudioWorkloads = $installedVisualStudioWorkloads | Where-Object -Property Value -CNE $app",
             "$otherInstalledVisualStudioWorkloads | ForEach-Object -Process { scoop uninstall $_.Value }",
             "Clear-VisualStudio",
+            "$isShowManifestEnabled = scoop config show_manifest",
+            "if ($isShowManifestEnabled){",
+            "scoop config show_manifest $false",
+            "}",
             "$otherInstalledVisualStudioWorkloads | ForEach-Object -Process { scoop install \"$bucket/$($_.Value)\" }",
+            "if ($isShowManifestEnabled){",
+            "scoop config show_manifest $true",
+            "}",
             "}",
             "}"
         ]
