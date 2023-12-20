@@ -1,13 +1,13 @@
 {
-    "version": "233.13135.14",
+    "version": "233.13135.91",
     "description": "Cross-Platform IDE for Ruby on Rails by JetBrains. (Early Access Program)",
     "homepage": "https://www.jetbrains.com/ruby/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/ruby/RubyMine-233.13135.14.exe#/dl.7z",
-    "hash": "16ed448c176d96fcf9baac96a4e52b78b0cd3178c4b9d8b7d16799c5cbd52697",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-2023.3.2.exe#/dl.7z",
+    "hash": "4af00780f36a097af2593419195fec10f3d4fc21d850680c31adcf376c6fcf89",
     "extract_to": "IDE",
     "installer": {
         "script": [
