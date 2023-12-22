@@ -1,0 +1,34 @@
+<Configuration ID="076f7322-7e43-4925-b50e-7c0a4d57ebc3">
+	<Add OfficeClientEdition="64" Channel="BetaChannel" Version="17217.20000">
+		<Product ID="O365ProPlusRetail">
+			<Language ID="MatchOS" Fallback="en-us"/>
+			<ExcludeApp ID="Bing" />
+			<ExcludeApp ID="Groove" />
+			<ExcludeApp ID="Lync" />
+			<ExcludeApp ID="OneNote" />
+			<ExcludeApp ID="Publisher" />
+		</Product>
+		<Product ID="VisioPro2021Volume">
+			<Language ID="MatchOS" Fallback="en-us"/>
+			<ExcludeApp ID="Bing" />
+			<ExcludeApp ID="Groove" />
+			<ExcludeApp ID="Lync" />
+			<ExcludeApp ID="OneNote" />
+			<ExcludeApp ID="Publisher" />
+		</Product>
+		<Product ID="ProjectPro2021Volume" PIDKEY="FTNWT-C6WBT-8HMGF-K9PRX-QV9H8">
+			<Language ID="MatchOS" Fallback="en-us"/>
+			<ExcludeApp ID="Bing" />
+			<ExcludeApp ID="Groove" />
+			<ExcludeApp ID="Lync" />
+			<ExcludeApp ID="OneNote" />
+			<ExcludeApp ID="Publisher" />
+		</Product>
+	</Add>
+	<Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+	<Property Name="AUTOACTIVATE" Value="1" />
+	<Property Name="PinIconsToTaskbar" Value="FALSE" />
+	<Updates Enabled="FALSE" />
+	<RemoveMSI />
+	<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
