@@ -12,12 +12,12 @@
     "pre_install": [
         "$scriptdir = \"$bucketsdir\\$bucket\\scripts\"",
         "if ($architecture -eq '64bit') {",
-        "     Copy-Item \"$scriptdir\\install-$app.xml\" \"$dir\\\"",
+        "    (Get-Content \"$scriptdir\\install-$app.xml\").Replace('{buildNumber}', $version) | Set-Content -Path \"$dir\\install-$app.xml\"",
         "}",
         "elseif ($architecture -eq '32bit') {",
-        "    (Get-Content \"$scriptdir\\install-$app.xml\").Replace('64', '32') | Set-Content -Path \"$dir\\install-$app.xml\"",
+        "    (Get-Content \"$scriptdir\\install-$app.xml\").Replace('{buildNumber}', $version).Replace('64', '32') | Set-Content -Path \"$dir\\install-$app.xml\"",
         "}",
-        "Copy-Item \"$scriptdir\\uninstall-microsoft-365-visio-project.xml\" \"$dir\\\""
+        "Copy-Item \"$scriptdir\\uninstall-microsoft-365.xml\" \"$dir\\\""
     ],
     "installer": {
         "script": [

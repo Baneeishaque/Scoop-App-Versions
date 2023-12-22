@@ -1,4 +1,4 @@
 <Configuration>
-    <Display Level="Full" />
+    <Display Level="None" />
     <Remove All="TRUE" />
 </Configuration>

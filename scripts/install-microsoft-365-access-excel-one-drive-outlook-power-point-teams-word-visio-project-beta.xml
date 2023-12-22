@@ -1,5 +1,5 @@
 <Configuration ID="076f7322-7e43-4925-b50e-7c0a4d57ebc3">
-	<Add OfficeClientEdition="64" Channel="BetaChannel" Version="17217.20000">
+	<Add OfficeClientEdition="64" Channel="BetaChannel" Version="16.0.{buildNumber}">
 		<Product ID="O365ProPlusRetail">
 			<Language ID="MatchOS" Fallback="en-us"/>
 			<ExcludeApp ID="Bing" />
