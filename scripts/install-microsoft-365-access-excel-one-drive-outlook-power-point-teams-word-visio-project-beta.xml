@@ -16,7 +16,7 @@
 			<ExcludeApp ID="OneNote" />
 			<ExcludeApp ID="Publisher" />
 		</Product>
-		<Product ID="ProjectPro2021Volume" PIDKEY="FTNWT-C6WBT-8HMGF-K9PRX-QV9H8">
+		<Product ID="ProjectPro2021Volume">
 			<Language ID="MatchOS" Fallback="en-us"/>
 			<ExcludeApp ID="Bing" />
 			<ExcludeApp ID="Groove" />
