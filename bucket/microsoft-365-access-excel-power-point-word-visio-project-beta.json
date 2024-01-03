@@ -26,7 +26,7 @@
         ]
     },
     "uninstaller": {
-        "script": "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/configure', \"`\"$dir\\uninstall-microsoft-365-visio-project.xml`\"\")"
+        "script": "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/configure', \"`\"$dir\\uninstall-microsoft-365.xml`\"\")"
     },
     "checkver": {
         "script": [
