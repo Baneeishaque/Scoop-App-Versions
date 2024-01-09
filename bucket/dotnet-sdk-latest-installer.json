@@ -1,5 +1,5 @@
 {
-    "version": "8.0.100",
+    "version": "8.0.101",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:248acec95b381e5302255310fb9396267fd74a4a2dc2c3a5989031969cb31f8270cbd14bda1bc0352ac90f8138bddad1a58e4af1e56cc4a1613b1cf2854b518e"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.101/dotnet-sdk-8.0.101-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:5de43de4f468dbaeb1b0bca6cf4774daf2c4ef8594451f1674a9a4a65149335ee956abaad4492be636161ed3d3eb5072099aafd344f94b0b55e04acba255d246"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:6ba1d4b2223f4d81055218d1b31fbb3839daf95ac5a063618073cf55badfd7614f1a672552cdf82c1d5aaadd27b0e68497d8e6317ec925daabe20aa68776c9d8"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.101/dotnet-sdk-8.0.101-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:3313919a647dbfa16afaec8a0a0292212fa7e7e612a895d5c0cd2df6a5bf09b2a47a213cdf3c6053637d5aa0e9d12d927dc28d20602768977a417edcef9bda05"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:d1231fe14a0ed93a62f3465397c191fa3f49382a5657ca3b5f5a2f592087495eb1d03a962e36b47a4641c596f40f7371d3e530fd3ab94e9dfa705cabbbd288c6"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.101/dotnet-sdk-8.0.101-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:59c76d112728c318291fc48411dd489848839f3c3b67354458d3f80f4262cfee16e22b6fc17e774dd1d259eb411a1d95490909c9a8bbe79ed054d424eda3e371"
         }
     },
     "installer": {
