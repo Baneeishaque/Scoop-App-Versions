@@ -30,5 +30,5 @@
 	<Property Name="PinIconsToTaskbar" Value="FALSE" />
 	<Updates Enabled="FALSE" />
 	<RemoveMSI />
-	<Display Level="Full" AcceptEULA="TRUE" />
+	<Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
