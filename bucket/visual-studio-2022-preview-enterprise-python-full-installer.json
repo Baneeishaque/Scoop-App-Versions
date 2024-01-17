@@ -1,10 +1,10 @@
 {
-    "version": "17.9.2",
+    "version": "17.9.3",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : python development, Workload Description : editing, debugging, interactive development and source control for python.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "67e6295e8fef59c477a35a744b1f8e2edea2fb4934ce8bb511faf7da2eb67caf",
+    "hash": "7449abb148aebc7fac8595b924ba667a422b28c24ef650050977327d7b84fa53",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.python;includeRecommended;includeOptional",
