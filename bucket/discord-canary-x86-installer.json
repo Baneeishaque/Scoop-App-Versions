@@ -1,0 +1,25 @@
+{
+    "version": "1.0.164",
+    "description": "Free Voice and Text Chat",
+    "homepage": "https://discordapp.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://discordapp.com/terms"
+    },
+    "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.164/DiscordCanarySetup.exe",
+    "hash": "4c676bc2fcfed37722142380ca25912f158611eb655ba0f9b90a23e22ded8d9c",
+    "installer": {
+        
+    },
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$env:LOCALAPPDATA\\DiscordCanary\\Update.exe\" -ArgumentList \"--uninstall\" -Wait"
+    },
+    "post_uninstall": "Remove-Item \"$env:LOCALAPPDATA\\DiscordCanary\" -Recurse",
+    "checkver": {
+        "script": "Write-Output $(Invoke-WebRequest -Uri \"https://discord.com/api/downloads/distributions/app/installers/latest?arch=x86&platform=win&channel=canary\" -Method Head).BaseResponse.RequestMessage.RequestUri.OriginalString",
+        "regex": "/([\\d.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/$version/DiscordCanarySetup.exe"
+    }
+}
