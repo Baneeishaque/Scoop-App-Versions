@@ -1,10 +1,10 @@
 {
-    "version": "17.9.3",
+    "version": "17.9.4",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : data science and analytical applications, Workload Description : languages and tooling for creating data science applications, including python and f#.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "7449abb148aebc7fac8595b924ba667a422b28c24ef650050977327d7b84fa53",
+    "hash": "727d7c8b99df7d924c703b440ac10e11db638b9423193ef620064f04bbcf1ab0",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.datascience;includeRecommended",
