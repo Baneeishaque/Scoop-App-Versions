@@ -1,0 +1,19 @@
+{
+    "version": "1.13.4",
+    "description": "Gisto is a code snippet manager that runs on GitHub Gists and adds additional features such as searching, tagging and sharing gists while including a rich code editor. All your data is stored on GitHub and you can access it from GitHub Gists at any time with changes carrying over to Gisto.",
+    "homepage": "http://www.gistoapp.com/",
+    "license": "MIT",
+    "url": "https://github.com/Gisto/Gisto/releases/download/v1.13.4/Gisto-1.13.4.exe#/dl.7z",
+    "hash": "sha512:8f941801e93a5825b3691dbaabc619b87d0ca45d78f1d83a31f1134aa987121d250d967cab8a09dc7fa6b925ec9148d96d8fd680b461ad2d16d81f6bb6d0c0d1",
+    "pre_install": [
+        "Move-Item \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall Gisto.exe\" -Recurse",
+        "Expand-7ZipArchive \"$dir\\app-64.7z\" -Removal"
+    ],
+    "checkver": {
+        "github": "https://github.com/Gisto/Gisto"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Gisto/Gisto/releases/download/v$version/Gisto-$version.exe#/dl.7z"
+    }
+}
