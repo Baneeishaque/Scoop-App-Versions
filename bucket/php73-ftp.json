@@ -9,10 +9,11 @@
     "depends": [
         "versions/php73"
     ],
-    "url":"https://windows.php.net/",
+    "url": "https://windows.php.net/",
     "post_install": [
+        "$php73AppFolder = $(appdir php73)",
         "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
-        "$ini = \"extension=ftp\"",
+        "$ini = \"extension=$php73AppFolder\\current\\ext\\php_ftp.dll\"",
         "if(!(test-path $phpconfd\\ftp.ini)) {",
         "    Write-Output \"Enabling extension $(Convert-Path $phpconfd)\\ftp.ini\"",
         "    Add-Content -Value $ini -Path \"$phpconfd\\ftp.ini\"",
