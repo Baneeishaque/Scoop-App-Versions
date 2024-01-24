@@ -40,8 +40,6 @@
     },
     "persist": [
         "IDE\\bin\\idea.properties",
-        "IDE\\bin\\idea.exe.vmoptions",
-        "IDE\\bin\\idea64.exe.vmoptions",
         "profile"
     ],
     "pre_uninstall": "Get-ChildItem \"$dir\\IDE\\bin\\idea*.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$persist_dir\\IDE\\bin\"",
