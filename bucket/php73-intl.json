@@ -11,14 +11,16 @@
     ],
     "url": "https://windows.php.net/",
     "post_install": [
-        "if (Test-Path \"$(appdir php73)\") {",
-        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=intl', 'extension=intl') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "$php73AppFolder = $(appdir php73)",
+        "if (Test-Path \"$php73AppFolder\") {",
+        "    $(Get-Content \"$php73AppFolder\\current\\cli\\php.ini\").replace(';extension=intl', \"extension=$php73AppFolder\\current\\ext\\php_intl.dll\") | Set-Content \"$php73AppFolder\\current\\cli\\php.ini\"",
         "} else {",
         "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate intl manually!\"",
         "}"
     ],
     "post_uninstall": [
-        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=intl', ';extension=intl') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+        "$php73AppFolder = $(appdir php73)",
+        "    $(Get-Content \"$php73AppFolder\\current\\cli\\php.ini\").replace(\"extension=$php73AppFolder\\current\\ext\\php_intl.dll\", ';extension=intl') | Set-Content \"$php73AppFolder\\current\\cli\\php.ini\""
     ],
     "notes": [
         "intl is already bundled with PHP 7.3!"
