@@ -16,12 +16,14 @@
     "url": "https://windows.php.net/",
     "post_install": [
         "if (Test-Path \"$(appdir php73)\") {",
-        "    (Get-Content \"$(appdir php73)\\current\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension=gd2)', '$1' } | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace(';extension=gd2', 'extension=gd2') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\"",
         "} else {",
         "    Write-Host -f Yellow \"PHP 7.3 was not installed through scoop, you have to activate gd2 manually!\"",
         "}"
     ],
-    "post_uninstall": [],
+    "post_uninstall": [
+        "    $(Get-Content \"$(appdir php73)\\current\\cli\\php.ini\").replace('extension=gd2', ';extension=gd2') | Set-Content \"$(appdir php73)\\current\\cli\\php.ini\""
+    ],
     "notes": [
         "GD is already bundled with PHP 7.3!"
     ]
