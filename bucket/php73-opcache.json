@@ -9,10 +9,11 @@
     "depends": [
         "versions/php73"
     ],
-    "url":"https://windows.php.net/",
+    "url": "https://windows.php.net/",
     "post_install": [
+        "$php73AppFolder = $(appdir php73)",
         "$phpconfd = \"$persist_dir\\..\\php73\\cli\\conf.d\"",
-        "$ini = \"zend_extension=opcache`n[opcache]`nopcache.enable=On`nopcache.enable_cli=On\"",
+        "$ini = \"zend_extension=$php73AppFolder\\current\\ext\\php_opcache.dll`n[opcache]`nopcache.enable=On`nopcache.enable_cli=On\"",
         "if(!(test-path $phpconfd\\opcache.ini)) {",
         "    Write-Output \"Enabling extension $(Convert-Path $phpconfd)\\opcache.ini\"",
         "    Add-Content -Value $ini -Path \"$phpconfd\\opcache.ini\"",
