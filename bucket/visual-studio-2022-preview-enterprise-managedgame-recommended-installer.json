@@ -1,10 +1,10 @@
 {
-    "version": "17.9.4",
+    "version": "17.9.5",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : game development with unity, Workload Description : create 2d and 3d games with unity, a powerful cross-platform development environment.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "727d7c8b99df7d924c703b440ac10e11db638b9423193ef620064f04bbcf1ab0",
+    "hash": "e2916087ecfc9ffeb6b6f7af9442393ca7e53caac8868f4f8aa25d8a37161cb0",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.managedgame;includeRecommended",
