@@ -1,17 +1,17 @@
 {
     "##": "Multiple components under various open source licenses. Included HTTPS Everywhere extension is the strictest.",
-    "version": "13.5a3",
+    "version": "13.5a4",
     "description": "Web browser that connects to the internet via the Tor anonymity network (Alpha Build Varient)",
     "homepage": "https://www.torproject.org/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://dist.torproject.org/torbrowser/13.5a3/tor-browser-windows-x86_64-portable-13.5a3.exe",
-            "hash": "fe936f36eb5d2fd41c0701a599bef9b954b8d52d72eea88acb7727e07eb3885f"
+            "url": "https://dist.torproject.org/torbrowser/13.5a4/tor-browser-windows-x86_64-portable-13.5a4.exe",
+            "hash": "df1b44452796c35e81d726aba910e361fe6457a4ffea19a7737dd470fcf03eeb"
         },
         "32bit": {
-            "url": "https://dist.torproject.org/torbrowser/13.5a3/tor-browser-windows-i686-portable-13.5a3.exe",
-            "hash": "160534acc6f2438d2f23afc4336b2dcee9ad17a872e3325fd9db8af767f87a55"
+            "url": "https://dist.torproject.org/torbrowser/13.5a4/tor-browser-windows-i686-portable-13.5a4.exe",
+            "hash": "8eb39f5b10bbdd79227690baa6c2b939c853cc277c66309602649fca00800716"
         }
     },
     "installer": {
