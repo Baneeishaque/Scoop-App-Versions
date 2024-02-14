@@ -1,5 +1,5 @@
 {
-    "version": "2022.3.1.10",
+    "version": "2023.3.1.9",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -7,15 +7,12 @@
         "url": "https://developer.android.com/studio/terms.html"
     },
     "suggest": {
-        "SDK": [
-            "android-clt",
-            "android-sdk"
-        ]
+        "Android SDK": "android-clt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.10/android-studio-2022.3.1.10-windows.zip",
-            "hash": "e8634f3f2996754be80d4ab4275853562136459321d2e5f420b0d5c793171a54",
+            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.3.1.9/android-studio-2023.3.1.9-windows-exe.zip",
+            "hash": "3a78a7ca1a703c0387cc13be05f5cc6435011573aa754fe68e69687c99e8b329",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
@@ -26,19 +23,13 @@
     },
     "extract_dir": "android-studio",
     "checkver": {
-        "script": [
-            "$pageContent = Invoke-WebRequest -Uri \"https://plugins.jetbrains.com/docs/intellij/android-studio-releases-list.html\"",
-            "$intermediateContent = $pageContent.Content.Substring($pageContent.Content.IndexOf(\"Canary-lightgrey\"))",
-            "$intermediateContent = $intermediateContent.Substring($intermediateContent.IndexOf(\"<span\"))",
-            "$finalContent = $intermediateContent.Substring($intermediateContent.IndexOf(\">\")+1)",
-            "Write-Output $finalContent"
-        ],
-        "regex": "([\\d.]+)"
+        "regex": "(\\d{4})\\.(\\d{1,2})\\.(\\d{1,2}) Canary (\\d{1,2})",
+        "replace": "${1}.${2}.${3}.${4}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip"
+                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows-exe.zip"
             }
         }
     }
