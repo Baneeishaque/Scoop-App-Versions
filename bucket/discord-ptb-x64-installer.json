@@ -1,0 +1,25 @@
+{
+    "version": "1.0.1056",
+    "description": "Free Voice and Text Chat",
+    "homepage": "https://discordapp.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://discordapp.com/terms"
+    },
+    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x64/1.0.1056/DiscordPTBSetup.exe",
+    "hash": "296f943f56e3df5113d92e20154968ed37b047d4dd2cfbefc35e9effda03ec94",
+    "installer": {
+
+    },
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$env:LOCALAPPDATA\\DiscordPTB\\Update.exe\" -ArgumentList \"--uninstall\" -Wait"
+    },
+    "post_uninstall": "Remove-Item \"$env:LOCALAPPDATA\\DiscordPTB\" -Recurse",
+    "checkver": {
+        "script": "Write-Output $(Invoke-WebRequest -Uri \"https://discord.com/api/downloads/distributions/app/installers/latest?arch=x64&platform=win&channel=ptb\" -Method Head).BaseResponse.RequestMessage.RequestUri.OriginalString",
+        "regex": "/([\\d.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x64/$version/DiscordPTBSetup.exe"
+    }
+}
