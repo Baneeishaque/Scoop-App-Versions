@@ -1,0 +1,49 @@
+{
+    "version": "0.78.0",
+    "description": "A set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
+    "homepage": "https://github.com/microsoft/PowerToys",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.78.0/PowerToysSetup-0.78.0-x64.exe",
+            "hash": "19e025381588abaec209cdd0a18bb779ee58fc24646d898c2a7c38a4858eaedb"
+        },
+        "arm64": {
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.78.0/PowerToysSetup-0.78.0-arm64.exe",
+            "hash": "5c70054a8991885a958f066b00d7fafe608c730fc7a99178d6c64a1f03a3c109"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\.tmp\"",
+            "Get-ChildItem \"$dir\\.tmp\\AttachedContainer\\PowerToysSetup*.msi\" | Rename-Item -NewName 'PowerToysSetup.msi' -Force",
+            "Expand-MsiArchive \"$dir\\.tmp\\AttachedContainer\\PowerToysSetup.msi\" \"$dir\" -ExtractDir 'PowerToys'",
+            "Remove-Item \"$dir\\.tmp\", \"$dir\\$fname\" -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "PowerToys.exe",
+            "PowerToys"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe",
+                "hash": {
+                    "url": "https://github.com/microsoft/PowerToys/releases/tag/v$version",
+                    "regex": "$basename<\\/a><\\/td>\\n<td>([0-9a-fA-F]{64})"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-arm64.exe",
+                "hash": {
+                    "url": "https://github.com/microsoft/PowerToys/releases/tag/v$version",
+                    "regex": "$basename<\\/a><\\/td>\\n<td>([0-9a-fA-F]{64})"
+                }
+            }
+        }
+    }
+}
