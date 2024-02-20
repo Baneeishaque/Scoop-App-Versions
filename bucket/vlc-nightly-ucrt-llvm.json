@@ -1,12 +1,12 @@
 {
-    "version": "20240219",
+    "version": "20240220",
     "description": "A free and open source multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
     "homepage": "https://www.videolan.org/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://artifacts.videolan.org/vlc/nightly-win64-ucrt-llvm/20240219-0440/vlc-4.0.0-dev-win64-9dd68a3c.7z",
-            "hash": "sha512:77037ed106a9dd93b30e98f516926e6d7bc184f4d51da4e4e9257eb0849dd9ae54c39496295e8ff736ebe085b8d8d77e7a6337c4f623ed2431545340bdc47c18"
+            "url": "https://artifacts.videolan.org/vlc/nightly-win64-ucrt-llvm/20240220-0437/vlc-4.0.0-dev-win64-509c0e81.7z",
+            "hash": "sha512:618d9f6546d5e7b58e42a4fdb6c49ba8852ca6a29ec88e8070f809921a9d4ec7daa4de361142e109848f521260c2b7f4a948bda1d1f4a52f11eb4443b87dd16d"
         }
     },
     "extract_dir": "vlc-4.0.0-dev",
