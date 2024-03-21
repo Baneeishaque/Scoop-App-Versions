@@ -1,13 +1,13 @@
 {
-    "version": "241.14024.11",
+    "version": "241.14494.150",
     "description": "Cross-Platform IDE for Databases & SQL by JetBrains (Latest).",
     "homepage": "https://www.jetbrains.com/datagrip/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/datagrip/datagrip-241.14024.11.win.zip",
-    "hash": "ae6011be62e3b3ad977726a333b21b0b003a1579643685eaa69f8d6150b3cbe1",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-241.14494.150.win.zip",
+    "hash": "500211fece752300e90ab9b549bf1f15cef2e9392e7fc81ea12ea7851b46462c",
     "extract_to": "IDE",
     "installer": {
         "script": [
