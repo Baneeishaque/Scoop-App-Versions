@@ -1,13 +1,13 @@
 {
-    "version": "241.14494.158",
+    "version": "241.14494.240",
     "description": "Cross-Platform IDE for Java by JetBrains (Latest) (2).",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIU-241.14494.158.win.zip",
-    "hash": "00d712a66041234ec371c734cc5562b12a0807aafe54b7ba6cec54b5813e862b",
+    "url": "https://download.jetbrains.com/idea/ideaIU-2024.1.win.zip",
+    "hash": "c14c3e1b61479c38ae5185f9b5e1ee4d4681fa8795e4000122fe788a4959c8dd",
     "extract_to": "IDE",
     "pre_install": "Get-ChildItem \"$persist_dir\\IDE\\bin\\idea*.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$dir\\IDE\\bin\"",
     "installer": {
