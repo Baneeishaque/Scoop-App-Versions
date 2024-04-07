@@ -10,7 +10,7 @@
     "url": "https://dummy-site.com",
     "installer": {
         "script": [
-            "$ini = \"extension=mbstring\"",
+            "$ini = \"extension=mbstring`n`n[mbstring]`n;mbstring.language = Japanese`n;mbstring.internal_encoding =`n;mbstring.http_input =`n;mbstring.http_output =`n;mbstring.encoding_translation = Off`n;mbstring.detect_order = auto`n;mbstring.substitute_character = none`n;mbstring.strict_detection = Off`n;mbstring.http_output_conv_mimetypes=`n;mbstring.regex_stack_limit=100000`n;mbstring.regex_retry_limit=1000000\"",
             "Set-Content -Value $ini -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\mbstring.ini\""
         ]
     },
