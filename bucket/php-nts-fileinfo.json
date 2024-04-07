@@ -1,0 +1,27 @@
+{
+    "version": "8.3.4",
+    "description": "The `fileinfo` module in PHP is used to guess the content type and encoding of a file. It does this by looking for certain magic byte sequences at specific positions within the file. While not foolproof, the heuristics used are generally very effective (version nts).",
+    "homepage": "https://www.php.net/manual/en/book.fileinfo.php",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": "main/php-nts",
+    "url": "https://dummy-site.com",
+    "installer": {
+        "script": [
+            "$ini = \"extension=fileinfo\"",
+            "Set-Content -Value $ini -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\fileinfo.ini\""
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\fileinfo.ini\""
+    },
+    "checkver": {
+        "url": "https://windows.php.net/download/",
+        "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
+    },
+    "autoupdate": {
+
+    }
+}
