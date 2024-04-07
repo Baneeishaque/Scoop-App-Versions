@@ -1,0 +1,33 @@
+{
+    "version": "8.3.4",
+    "description": "PHP, or Hypertext Preprocessor, is a general-purpose scripting language used for web development. Laravel is a web application framework with expressive, elegant syntax (version nts).",
+    "homepage": "https://www.php.net/manual/en/intro.pdo.php",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": [
+        "main/php-nts",
+        "main/composer",
+        "versions-fork/php-nts-curl",
+        "versions-fork/php-nts-fileinfo",
+        "versions-fork/php-nts-mbstring",
+        "versions-fork/php-nts-openssl",
+        "versions-fork/php-nts-pdo"
+    ],
+    "url": "https://dummy-site.com",
+    "installer": {
+        "script": [
+            "$ini = \"extension=pdo_sqlite\"",
+            "Set-Content -Value $ini -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\pdo_sqlite.ini\""
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\pdo_sqlite.ini\""
+    },
+    "checkver": {
+        "url": "https://windows.php.net/download/",
+        "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
+    },
+    "autoupdate": {}
+}
