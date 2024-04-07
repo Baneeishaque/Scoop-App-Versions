@@ -1,0 +1,27 @@
+{
+    "version": "8.3.4",
+    "description": "The `pdo_pgsql` module in PHP provides an interface for accessing PostgreSQL databases (version nts).",
+    "homepage": "https://www.php.net/manual/en/ref.pdo-pgsql.php",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": "main/php-nts",
+    "url": "https://dummy-site.com",
+    "installer": {
+        "script": [
+            "$ini = \"extension=pdo_pgsql\"",
+            "Set-Content -Value $ini -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\pdo_pgsql.ini\""
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\pdo_pgsql.ini\""
+    },
+    "checkver": {
+        "url": "https://windows.php.net/download/",
+        "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
+    },
+    "autoupdate": {
+
+    }
+}
