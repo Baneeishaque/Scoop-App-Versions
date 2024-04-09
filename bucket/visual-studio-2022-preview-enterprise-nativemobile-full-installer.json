@@ -1,10 +1,10 @@
 {
-    "version": "17.10.2",
+    "version": "17.10.3",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : mobile development with c++, Workload Description : build cross-platform applications for ios, android or windows using c++.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "ebcce78991685fb461c2c322063021eda0ff3213963727021b853f30f4b2717a",
+    "hash": "5f00c68ae2f11ed0123ef431928e9887369e186dc267ac70999b65d30bdee04b",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.nativemobile;includeRecommended;includeOptional",
