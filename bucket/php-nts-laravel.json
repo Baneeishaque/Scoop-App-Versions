@@ -1,5 +1,5 @@
 {
-    "version": "8.3.4",
+    "version": "8.3.6",
     "description": "PHP, or Hypertext Preprocessor, is a general-purpose scripting language used for web development. Laravel is a web application framework with expressive, elegant syntax (version nts).",
     "homepage": "https://www.php.net/manual/en/intro.pdo.php",
     "license": {
@@ -29,5 +29,7 @@
         "url": "https://windows.php.net/download/",
         "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
     },
-    "autoupdate": {}
+    "autoupdate": {
+        
+    }
 }
