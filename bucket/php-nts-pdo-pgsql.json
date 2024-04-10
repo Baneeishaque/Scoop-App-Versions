@@ -1,5 +1,5 @@
 {
-    "version": "8.3.4",
+    "version": "8.3.6",
     "description": "The `pdo_pgsql` module in PHP provides an interface for accessing PostgreSQL databases (version nts).",
     "homepage": "https://www.php.net/manual/en/ref.pdo-pgsql.php",
     "license": {
@@ -22,6 +22,6 @@
         "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
     },
     "autoupdate": {
-
+        
     }
 }
