@@ -1,10 +1,10 @@
 {
-    "version": "17.10.3",
+    "version": "17.10.4",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : asp.net and web development, Workload Description : build web applications using asp.net core, asp.net, html/javascript, and containers including docker support.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "5f00c68ae2f11ed0123ef431928e9887369e186dc267ac70999b65d30bdee04b",
+    "hash": "d8f2c275d30f7b9fa3539681cc194cd3ebc96362eb5773d168545c0c6afb3f5d",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.netweb",
