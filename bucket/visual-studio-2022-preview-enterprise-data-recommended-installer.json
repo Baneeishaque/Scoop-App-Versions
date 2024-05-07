@@ -1,10 +1,10 @@
 {
-    "version": "17.10.6",
+    "version": "17.10.7",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : data storage and processing, Workload Description : connect, develop, and test data solutions with sql server, azure data lake, or hadoop.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "734da4a1013cf908f3788116d9ebf2f5791ec71885f459182f3b35c54dadfd56",
+    "hash": "0b16a3d89e897c814d7ad178e56bf8e8fd8ee62d95f0c276ba5df78a1d8a8857",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.data;includeRecommended",
