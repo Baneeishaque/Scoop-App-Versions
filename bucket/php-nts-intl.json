@@ -1,0 +1,27 @@
+{
+    "version": "8.3.7",
+    "description": "The `intl` extension in PHP is a wrapper for the ICU library, enabling PHP programmers to perform various locale-aware operations including but not limited to formatting, transliteration, encoding conversion, calendar operations, UCA-conformant collation, locating text boundaries and working with locale identifiers, timezones and graphemes (version nts).",
+    "homepage": "https://www.php.net/manual/en/book.intl.php",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "depends": "main/php-nts",
+    "url": "https://dummy-site.com",
+    "installer": {
+        "script": [
+            "$ini = \"extension=intl`n`n[intl]`n;intl.default_locale =`n;intl.error_level = E_WARNING`n;intl.use_exceptions = 0\"",
+            "Set-Content -Value $ini -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\intl.ini\""
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$(scoop prefix php-nts)\\cli\\conf.d\\intl.ini\""
+    },
+    "checkver": {
+        "url": "https://windows.php.net/download/",
+        "regex": "<h3 id=\"php-[\\d.]+\".*?>.*?\\(([\\d.]+)\\)</h3>"
+    },
+    "autoupdate": {
+
+    }
+}
