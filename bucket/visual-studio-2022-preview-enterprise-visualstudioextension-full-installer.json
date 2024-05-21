@@ -1,10 +1,10 @@
 {
-    "version": "17.10.7",
+    "version": "17.11.1",
     "description": "Visual Studio Enterprise is a powerful, comprehensive IDE for developers designing, building, testing, and deploying complex applications for any platform—including the Microsoft stack. Preview Channel is meant for those who are eager to try out the very latest Visual Studio features and fixes. Workload Formal Name : visual studio extension development, Workload Description : create add-ons and extensions for visual studio, including new commands, code analyzers and tool windows.",
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "0b16a3d89e897c814d7ad178e56bf8e8fd8ee62d95f0c276ba5df78a1d8a8857",
+    "hash": "4679893d43bad832ca12c70c253e87bf68ee019b1c6f17a9e6ba2b63d248797c",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.visualstudioextension;includeRecommended;includeOptional",
