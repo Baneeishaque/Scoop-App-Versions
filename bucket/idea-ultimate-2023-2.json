@@ -1,13 +1,13 @@
 {
-    "version": "2023.2.6",
+    "version": "2023.2.7",
     "description": "Cross-Platform IDE for Java by JetBrains (2023.2).",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIU-2023.2.6.win.zip",
-    "hash": "8e3d7272b4ac627ab7da3fcf5726eb66811b479907bad964af046e836162c1d6",
+    "url": "https://download.jetbrains.com/idea/ideaIU-2023.2.7.win.zip",
+    "hash": "50cd0470ca0acfae471a1b4c01c9bd679e9f373a3225021edaf23f9f2c75294e",
     "extract_to": "IDE",
     "pre_install": "Get-ChildItem \"$persist_dir\\IDE\\bin\\idea*.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$dir\\IDE\\bin\"",
     "installer": {
