@@ -1,5 +1,5 @@
 {
-    "version": "8.3.8",
+    "version": "8.3.9",
     "description": "The PHP Data Objects (PDO) extension defines a lightweight, consistent interface for accessing databases in PHP. PDO provides a data-access abstraction layer, which means that, regardless of which database you're using, you use the same functions to issue queries and fetch data (version nts).",
     "homepage": "https://www.php.net/manual/en/intro.pdo.php",
     "license": {
