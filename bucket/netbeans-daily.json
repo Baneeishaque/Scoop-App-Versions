@@ -1,5 +1,5 @@
 {
-    "version": "fcd5972d9cd6b220619a1656c18d027cfbc09293",
+    "version": "87a9d8c4eb6ddae3daf680f481dc00e2bf2b0ce3",
     "description": "Quickly and easily develop desktop, mobile, and web applications with Java, JavaScript, HTML5, PHP, C/C++ and more.",
     "homepage": "https://netbeans.apache.org",
     "license": "Apache-2.0",
@@ -7,8 +7,8 @@
         "JDK11": "java/openjdk11",
         "JDK17": "java/openjdk17"
     },
-    "url": "https://ci-builds.apache.org/job/Netbeans/job/netbeans-linux/lastSuccessfulBuild/artifact/nbbuild/NetBeans-dev-dev-fcd5972d9cd6b220619a1656c18d027cfbc09293-release.zip",
-    "hash": "daa37b62cf5ebedc07a1b4171476ad05c00956f6fc565745019a89bc794430da",
+    "url": "https://ci-builds.apache.org/job/Netbeans/job/netbeans-linux/lastSuccessfulBuild/artifact/nbbuild/NetBeans-dev-dev-87a9d8c4eb6ddae3daf680f481dc00e2bf2b0ce3-release.zip",
+    "hash": "d55c16834ca261e61f90d6a3d7ec660ea54fe879b67760e5a93e5f44ab91e5fe",
     "extract_dir": "netbeans",
     "post_install": [
         "if ($env:JAVA_HOME) {",
