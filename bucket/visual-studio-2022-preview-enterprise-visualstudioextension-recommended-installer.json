@@ -4,7 +4,7 @@
     "homepage": "https://visualstudio.microsoft.com/vs/preview/",
     "license": "Freemium",
     "url": "https://aka.ms/vs/17/pre/vs_enterprise.exe",
-    "hash": "4921da386ad2bc2b8c06dfe12f10d6e0ddae17043785bc2b3adb207e8fface5f",
+    "hash": "7867f2fd77b2ed5ba9696367291841f1ac1c79c343d197292a1c4e57bfc98b16",
     "installer": {
         "args": [
             "--add=Microsoft.VisualStudio.Workload.visualstudioextension;includeRecommended",
