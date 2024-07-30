@@ -1,5 +1,5 @@
 {
-    "version": "8.3.9",
+    "version": "8.3.10",
     "description": "The `fileinfo` module in PHP is used to guess the content type and encoding of a file. It does this by looking for certain magic byte sequences at specific positions within the file. While not foolproof, the heuristics used are generally very effective (version nts).",
     "homepage": "https://www.php.net/manual/en/book.fileinfo.php",
     "license": {
