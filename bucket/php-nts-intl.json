@@ -1,5 +1,5 @@
 {
-    "version": "8.3.9",
+    "version": "8.3.10",
     "description": "The `intl` extension in PHP is a wrapper for the ICU library, enabling PHP programmers to perform various locale-aware operations including but not limited to formatting, transliteration, encoding conversion, calendar operations, UCA-conformant collation, locating text boundaries and working with locale identifiers, timezones and graphemes (version nts).",
     "homepage": "https://www.php.net/manual/en/book.intl.php",
     "license": {
