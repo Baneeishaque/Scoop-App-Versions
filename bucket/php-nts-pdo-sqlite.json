@@ -1,5 +1,5 @@
 {
-    "version": "8.3.9",
+    "version": "8.3.10",
     "description": "The `pdo_sqlite` module in PHP provides an interface for accessing SQLite databases (version nts).",
     "homepage": "https://www.php.net/manual/en/ref.pdo-sqlite.php",
     "license": {
