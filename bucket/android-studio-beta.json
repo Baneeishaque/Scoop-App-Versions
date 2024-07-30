@@ -31,6 +31,10 @@
             "64bit": {
                 "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip"
             }
+        },
+        "hash": {
+            "url": "https://developer.android.com/frame/studio/archive_200c5563aae209fdb2a20bb072bea631a9e18a26ceab21d8c7975c32f119d732.frame",
+            "regex": "(?s)$sha256 $basename"
         }
     }
 }
