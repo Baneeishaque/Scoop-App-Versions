@@ -1,5 +1,5 @@
 {
-    "version": "8.3.9",
+    "version": "8.3.10",
     "description": "PHP supports `libcurl`, a library that enables communication with various types of servers using multiple protocols. It supports protocols like HTTP, HTTPS, FTP, Gopher, Telnet, Dict, File, and LDAP. `libcurl` also provides features such as HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading (also achievable with PHP's FTP extension), HTTP form-based upload, proxies, cookies, and user-password authentication (version nts).",
     "homepage": "https://www.php.net/manual/en/book.curl.php",
     "license": {
