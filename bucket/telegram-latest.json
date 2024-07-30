@@ -1,16 +1,16 @@
 {
-    "version": "5.2.3",
+    "version": "5.2.5",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "32bit": {
-            "hash": "8a349826ab055446d7ad10abb83a21181ae69224efa7e136d2b134bf176d890b",
-            "url": "https://td.telegram.org/tsetup/tportable.5.2.3.zip"
+            "hash": "c6a33d76f956aa50b3448cd07621761ce1542d2b15fb25f4f5575965d1c2dca7",
+            "url": "https://td.telegram.org/tsetup/tportable.5.2.5.beta.zip"
         },
         "64bit": {
-            "hash": "3829ec2951cf54c1ea756180c7aa793a257b971ecc98343f295d538c5dbe7ebb",
-            "url": " https://td.telegram.org/tx64/tportable-x64.5.2.3.zip"
+            "hash": "f03ad0221f9e311e79538d3c69f30ff8c7005376553d17e00f2c92a83ce2bff0",
+            "url": " https://td.telegram.org/tx64/tportable-x64.5.2.5.beta.zip"
         }
     },
     "extract_dir": "Telegram",
@@ -25,16 +25,15 @@
     ],
     "checkver": {
         "script": [
-            "$latest = Select-String -InputObject $(Invoke-WebRequest -Uri \"https://github.com/telegramdesktop/tdesktop/releases/\").Content -Pattern 'tag/v([\\d.]+).+\\s.+\">(.+)<'",
-            "if($latest.Matches.Groups[2].Value -ceq 'Pre-release'){",
-            "$betaOrStable = '.beta'",
-            "}",
-            "else{",
-            "$betaOrStable = ''",
-            "}",
-            "Write-Output \"$($latest.Matches.Groups[1].Value)$betaOrStable\""
+            "$betaVersion = [System.Version]$(Select-String -InputObject $(Invoke-WebRequest -Uri 'https://telegram.org/dl/desktop/win64_portable?beta=1').BaseResponse.RequestMessage.RequestUri.AbsoluteUri -Pattern 'tportable-x64\\.(.+)\\.beta.zip').Matches.Groups[1].Value",
+            "$stableVersion = [System.Version]$(Select-String -InputObject $(Invoke-WebRequest -Uri 'https://telegram.org/dl/desktop/win64_portable').BaseResponse.RequestMessage.RequestUri.AbsoluteUri -Pattern 'tportable-x64\\.(.+)\\.zip').Matches.Groups[1].Value",
+            "if($betaVersion -gt $stableVersion){",
+            "Write-Output \"$betaVersion .beta\"",
+            "}else{",
+            "Write-Output \"$stableVersion\"",
+            "}"
         ],
-        "regex": "(?<version>[\\d.]+)( (?<beta>\\.beta))*"
+        "regex": "([\\d.]+)( (?<beta>\\.beta))*"
     },
     "autoupdate": {
         "architecture": {
