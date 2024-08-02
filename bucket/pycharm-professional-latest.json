@@ -6,8 +6,6 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/python/pycharm-professional-242.20224.170.exe#/dl.7z",
-    "hash": "51f46c06d608b996e6184c92031b0879a9329f4d8aba233dc5d6fd358afb2c13",
     "extract_to": "IDE",
     "installer": {
         "script": [
@@ -17,6 +15,8 @@
     },
     "architecture": {
         "64bit": {
+            "url": "https://download.jetbrains.com/python/pycharm-professional-242.20224.170.exe#/dl.7z",
+            "hash": "51f46c06d608b996e6184c92031b0879a9329f4d8aba233dc5d6fd358afb2c13",
             "bin": [
                 [
                     "IDE\\bin\\pycharm64.exe",
@@ -29,20 +29,10 @@
                     "JetBrains\\PyCharm Professional (Latest)"
                 ]
             ]
-        },
-        "32bit": {
-            "bin": "IDE\\bin\\pycharm.exe",
-            "shortcuts": [
-                [
-                    "IDE\\bin\\pycharm.exe",
-                    "JetBrains\\PyCharm Professional (Latest)"
-                ]
-            ]
         }
     },
     "persist": [
         "IDE\\bin\\idea.properties",
-        "IDE\\bin\\pycharm.exe.vmoptions",
         "IDE\\bin\\pycharm64.exe.vmoptions",
         "profile"
     ],
@@ -68,9 +58,13 @@
         "regex": "(?<version>[\\d.]+) (?<release>[\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/python/pycharm-professional-$matchRelease.exe#/dl.7z",
-        "hash": {
-            "url": "$url.sha256"
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/python/pycharm-professional-$matchRelease.exe#/dl.7z",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
         }
     }
 }
