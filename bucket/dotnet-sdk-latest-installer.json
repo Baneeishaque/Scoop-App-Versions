@@ -1,5 +1,5 @@
 {
-    "version": "9.0.100-preview.6.24328.19",
+    "version": "9.0.100-preview.7.24407.12",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.6.24328.19/dotnet-sdk-9.0.100-preview.6.24328.19-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:c13e4012dccb0037bcd7d48593947765a5faa05a2181bd2a3a7e32a5acfc74fecb251f602652d82410fb10b8f7174bf444e5a50dc226f137f0b1ced6a31976e5"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.7.24407.12/dotnet-sdk-9.0.100-preview.7.24407.12-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:53a429eec91b4335d2ff1822bd2b41c826b06a53d187d24645a991066f28498d93f06557bd1c471a9334dc02bcdb3b6d075cfa9d6c894bdfc0f29c0b6e0d7a02"
         },
         "32bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.6.24328.19/dotnet-sdk-9.0.100-preview.6.24328.19-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:9ff4057a1c5e7b5fc088415244ea795462f708ba6fff4d68bd6cc0e2cb7d10ecfd7ad2b6157999e1a815cc6ba01fc816c9ab5a15976eccc2f5adbd7c815ef8bc"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.7.24407.12/dotnet-sdk-9.0.100-preview.7.24407.12-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:fd527045869746eb27acde707a054618f5f9757ea44333d1088013de9d5efef0c398ebfc911127a6a1a3ea292572db4e1f5d0e687f3e3e44bf45a3aa7816595c"
         },
         "arm64": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.6.24328.19/dotnet-sdk-9.0.100-preview.6.24328.19-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:9ce4ef04fa4d9e4e7872adc104f54060761c2ced3f6c2a866f345cf2f36fd8ef5b044025afea64534b5faaa8ab5a3d81724b81ddcba6141818977a40c906b39d"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.100-preview.7.24407.12/dotnet-sdk-9.0.100-preview.7.24407.12-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:0d6db7e772809f87bd70c6b5468f37ff14b466c59f3f3c0f85848b2cb7e938f550768b0a8a70ddb3dae0f900a6abe69dd6c641393e772d857a5160167c4b76cc"
         }
     },
     "installer": {
