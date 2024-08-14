@@ -33,7 +33,6 @@
     },
     "persist": [
         "IDE\\bin\\idea.properties",
-        "IDE\\bin\\pycharm64.exe.vmoptions",
         "profile"
     ],
     "checkver": {
