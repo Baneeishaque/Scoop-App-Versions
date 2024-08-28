@@ -1,5 +1,5 @@
 {
-    "version": "8.3.10",
+    "version": "8.3.11",
     "description": "The `mbstring` module in PHP provides multibyte specific string functions that help you deal with multibyte encodings in PHP. It is designed to handle Unicode-based encodings such as UTF-8 and UCS-2 and many single-byte encodings for convenience. When you manipulate (trim, split, splice, etc.) strings encoded in a multibyte encoding, you need to use special functions since two or more consecutive bytes may represent a single character in such encoding schemes (version nts).",
     "homepage": "https://www.php.net/manual/en/book.mbstring.php",
     "license": {
