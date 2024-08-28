@@ -1,5 +1,5 @@
 {
-    "version": "8.3.10",
+    "version": "8.3.11",
     "description": "The `openssl` module in PHP provides cryptography functions, as well as some digitally signed document verification. It is designed to handle a wide range of cryptographic operations, including generation of certificates, management and verification (version nts).",
     "homepage": "https://www.php.net/manual/en/book.openssl.php",
     "license": {
