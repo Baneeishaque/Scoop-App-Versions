@@ -1,5 +1,5 @@
 {
-    "version": "2.46.2.1",
+    "version": "2.47.0.1-rc0",
     "description": "Distributed version control system (Latest)",
     "homepage": "https://gitforwindows.org",
     "license": "GPL-2.0-only",
@@ -12,12 +12,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/PortableGit-2.46.2-64-bit.7z.exe#/dl.7z",
-            "hash": "58ae5c1a27d3f9ce8518c1a187860973cfa4dd604f518350e84f7baf418fc9fa"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.47.0-rc0.windows.1/PortableGit-2.47.0-rc0-64-bit.7z.exe#/dl.7z",
+            "hash": "4d3f7132f527ce771915c3ad5013cc44b6579d0044a7e1163135f99c101e7b4a"
         },
         "32bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/PortableGit-2.46.2-32-bit.7z.exe#/dl.7z",
-            "hash": "7351e28f498010f0aa2fd63abbd704698db38cf6f881e2417fb3d73e5a7e6f87"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.47.0-rc0.windows.1/PortableGit-2.47.0-rc0-32-bit.7z.exe#/dl.7z",
+            "hash": "24f4ae7f1ba5c290427036bce10dc252f256f7feb18246cd87d0472db78298c5"
         }
     },
     "post_install": [
