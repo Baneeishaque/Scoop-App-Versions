@@ -1,16 +1,16 @@
 {
-    "version": "5.7.3",
+    "version": "5.8.1",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "32bit": {
-            "hash": "34970edaca35144c62df71c6b0a87f27ac333956d5cdf578090c0ad82a17b5e5",
-            "url": "https://td.telegram.org/tsetup/tportable.5.7.3.beta.zip"
+            "hash": "fcd0b27126ad3f811ad9f27f49eaf8009a8b448fcbd3af10ab9813cf14c32a81",
+            "url": "https://td.telegram.org/tsetup/tportable.5.8.1.zip"
         },
         "64bit": {
-            "hash": "27de0437ae6d7ad800c34f1c34cb367d656133d1e13300848e726b184e76821d",
-            "url": " https://td.telegram.org/tx64/tportable-x64.5.7.3.beta.zip"
+            "hash": "51444ec38f4aceedf9bb010d4dafe67aadf395bcc2f8ab7186ea072c3b81c759",
+            "url": " https://td.telegram.org/tx64/tportable-x64.5.8.1.zip"
         }
     },
     "extract_dir": "Telegram",
