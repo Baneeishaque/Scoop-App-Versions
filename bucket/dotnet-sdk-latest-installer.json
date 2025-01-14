@@ -1,5 +1,5 @@
 {
-    "version": "9.0.101",
+    "version": "9.0.102",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.101/dotnet-sdk-9.0.101-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:6c1899452dc855698ccc2a9928301352e5700e7829f0d42a1e567b51f08089affc67801ba7cd49d7e45b4a4dcb79cba54561163d64c27c3f36108737b3bf9f62"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.102/dotnet-sdk-9.0.102-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:91505782b13937392bd73d1531c01807275ef476f9e37f8ef22c2cee4b19be8282207149b4eb958668dee0c05cef02b0a6bc375b71e8e94864c3d89dea7ba534"
         },
         "32bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.101/dotnet-sdk-9.0.101-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:14d22475bf0d13b01d36f472353239de0351454f3b570d0629f6003aab55032ff575fae237e20d2e9e3d45a9f6a884c6d1330e025ebcf22a8e19d68d7f64c149"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.102/dotnet-sdk-9.0.102-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:fb043c6deb487a743f86caacdd13d6dfd8a5239c40b54df99e6bdef8b9567289bfce715a8bbad452500c445b487b5d2a0aaaaf1e1065b08a0a23a6e2c98419ed"
         },
         "arm64": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.101/dotnet-sdk-9.0.101-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:d09cb91e49313e7ae891d28c8fc7841b2a92cfcc3f610b249b9ef81230615335daa30ad210d9db6942ac1d02d446c8d1cf9d7cab0daff543221bb4e6697cd3db"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.102/dotnet-sdk-9.0.102-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:b9b78e41a3ecb4ea017471e8213ecfd1b0e0ec6504b74fa0fc4c8c601468fe9e966b76ce173b0d124478a5430d940408ee8f379725988bb3e0998054357d7239"
         }
     },
     "installer": {
