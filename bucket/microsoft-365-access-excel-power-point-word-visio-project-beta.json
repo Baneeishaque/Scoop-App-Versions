@@ -1,5 +1,5 @@
 {
-    "version": "1.0.553",
+    "version": "1.0.1090",
     "description": "Family of client software, server software and services developed by Microsoft.",
     "homepage": "https://www.office.com/",
     "license": {
@@ -8,7 +8,7 @@
     },
     "depends": "7zip19.00-helper",
     "url": "https://download.microsoft.com/download/#/dl.7z_",
-    "hash": "f395b1abd957d36e1f2db54817f2b596324f7f0de8badb1e30488434c4d98eac",
+    "hash": "0598df44868131f854844799050628972989c7b2e27a332d2e79e3b7f87043a0",
     "pre_install": [
         "$scriptdir = \"$bucketsdir\\$bucket\\scripts\"",
         "if ($architecture -eq '64bit') {",
