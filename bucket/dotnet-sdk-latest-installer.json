@@ -1,5 +1,5 @@
 {
-    "version": "9.0.200",
+    "version": "10.0.100-preview.1.25120.13",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.200/dotnet-sdk-9.0.200-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:801d4a40a7bdad5c7b50e75c55c5ab657da44b5d779fe50da5683450e23c595e8b18e6bc9ffb80636ffb347b72e575379cd83c7554dc27f5ba75246169f327a8"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:cf6f4f097b15488bc027171f16a15a11eca65b0aba4630e998026ebdd8501757f8b68f6be6cde16b333c35392394f8f8c0dc5b4aac4b0df7609376cc6ba151c8"
         },
         "32bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.200/dotnet-sdk-9.0.200-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:3ddeb620fc45c623ade58f179e80cea64b7af5b76b0b4b1f65b766df3c5614ce04809f40614ebeb98dd6b4662dc1c2bed38d1f78eadc489360d54e35b98b9904"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:ae9f4b1b82c5be882e6c112e146e20d50f8fcd6e700263088be2ede90638a62ccd2dbb3c72407abaab636c0478b7a77fe85e60671463dd31e1aa864f33820a6f"
         },
         "arm64": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/9.0.200/dotnet-sdk-9.0.200-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:06d7c4133bf7cb6f72b60b97f11c1f8773291e888f556c355d45dc66e3b36e597ac5562359fb3221b970b28f02649f0693d5109467698310752e0a8dc60f6703"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:0a676d984d6b67e4cf8b7bc540c777fd50a0b70a3cfc66cdc22719f2b6d9802e66d9fc7bba7388745e8340a92c9a990b00576bcf008bf04f1848f380f563ad5b"
         }
     },
     "installer": {
