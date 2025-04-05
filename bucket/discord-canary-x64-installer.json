@@ -1,13 +1,13 @@
 {
-    "version": "1.0.587",
+    "version": "1.0.588",
     "description": "Free Voice and Text Chat",
     "homepage": "https://discordapp.com/",
     "license": {
         "identifier": "Freeware",
         "url": "https://discordapp.com/terms"
     },
-    "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x64/1.0.587/DiscordCanarySetup.exe",
-    "hash": "0237f4a8ba5bb03980060c55f19c7fb44f836f22bcdffc13cc46fa6d412f3cbb",
+    "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x64/1.0.588/DiscordCanarySetup.exe",
+    "hash": "96ee0a4c92afc87e63438b93e3a173763d5f0fcede86fb29135b5c638fcedf9d",
     "installer": {
         
     },
