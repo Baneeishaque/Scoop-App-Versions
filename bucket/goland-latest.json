@@ -1,13 +1,13 @@
 {
-    "version": "251.23774.216",
+    "version": "251.23774.329",
     "description": "Cross-Platform IDE for Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/go/goland-251.23774.216.win.zip",
-    "hash": "b887924aa2d8a33067e3a2822dc618b97b930f87a5e7b8bd245c2f05be59efe6",
+    "url": "https://download.jetbrains.com/go/goland-251.23774.329.win.zip",
+    "hash": "5166a670fd734cb334d442c1247928f66aa16e08a39fa08e8782750720de7b8c",
     "extract_to": "IDE",
     "installer": {
         "script": [
