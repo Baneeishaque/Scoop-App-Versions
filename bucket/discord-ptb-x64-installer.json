@@ -1,13 +1,13 @@
 {
-    "version": "1.0.1137",
+    "version": "1.0.1138",
     "description": "Free Voice and Text Chat",
     "homepage": "https://discordapp.com/",
     "license": {
         "identifier": "Freeware",
         "url": "https://discordapp.com/terms"
     },
-    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x64/1.0.1137/DiscordPTBSetup.exe",
-    "hash": "d2060d8e4fce2be39e7e19b3e215acf7a19299d85eccdace375842da803c6f09",
+    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x64/1.0.1138/DiscordPTBSetup.exe",
+    "hash": "797e13325886be6cfc9293ece9dd0ad454aa7ba7b0e1b7501425e77d0dcabaab",
     "installer": {
         
     },
