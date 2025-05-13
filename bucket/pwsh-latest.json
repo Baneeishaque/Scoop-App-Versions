@@ -1,5 +1,5 @@
 {
-    "version": "7.5.1",
+    "version": "7.4.10",
     "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
@@ -12,16 +12,16 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.1/PowerShell-7.5.1-win-x64.zip",
-            "hash": "4d3028da81170f8d1cd226614582f0a95d3dd5592127cf87a09e3a3568e51a08"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.4.10/PowerShell-7.4.10-win-x64.zip",
+            "hash": "cf580a79a2210a51ac1f3b2871a95be4d63ac302cffc41746afb8d1e1e31a80f"
         },
         "32bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.1/PowerShell-7.5.1-win-x86.zip",
-            "hash": "e5cf58e27bdd4ab43b4dc410e580667a8a8c8eb400d3a0c6a1f2fae7df78f7d9"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.4.10/PowerShell-7.4.10-win-x86.zip",
+            "hash": "f54b7f437e0a6b99066d79354c2a10503e715373e72d6e8b07806ced126113ad"
         },
         "arm64": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.1/PowerShell-7.5.1-win-arm64.zip",
-            "hash": "78e78fd6a9d0a837778f6490d697b0df3ac09a3fa94655b0d049f236b7f428e9"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.4.10/PowerShell-7.4.10-win-arm64.zip",
+            "hash": "0bdcd7f9d2a074248f9a050dcd1847376b81833e58e62db191cee7c9826b7462"
         }
     },
     "pre_install": [
