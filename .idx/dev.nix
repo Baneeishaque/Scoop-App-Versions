@@ -3,6 +3,7 @@
 
   packages = [
     pkgs.powershell
+    pkgs.tree
   ];
 
   env = { };
