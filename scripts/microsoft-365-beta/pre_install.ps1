@@ -1,3 +1,5 @@
+. "$PSScriptRoot\..\scoop-indep-variables.ps1"
+Set-ScoopIndepVariables -SubFolderPath $PSScriptRoot
 
 $scriptdir = "$bucketsdir\$bucket\scripts"
 if (-not (Test-Path -Path $scriptdir)) {
