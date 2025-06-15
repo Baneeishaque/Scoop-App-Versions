@@ -1,5 +1,14 @@
-. "$PSScriptRoot\..\scoop-variables-for-manifest-script-independent-run.ps1"
-Set-ScoopVariables -SubFolderPath $PSScriptRoot
+if (Get-Variable -Name version -Scope Script -ErrorAction SilentlyContinue) {
+
+    $script:ScoopVariablesInitialized = $true
+
+} else {
+
+    . "$PSScriptRoot\..\scoop-variables-for-manifest-script-independent-run.ps1"
+    Set-ScoopVariables -SubFolderPath $PSScriptRoot
+}
+
+$script:preInstallScriptRun = $true
 
 $scriptdir = "$bucketsdir\$bucket\scripts"
 if (-not (Test-Path -Path $scriptdir)) {
