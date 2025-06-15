@@ -9,24 +9,12 @@
     "depends": "7zip19.00-helper",
     "url": "https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_18730-20142.exe#/dl.7z_",
     "hash": "973d0b835ee5400369b6f6221a5d769434d65b724db7f19ccd0afe574dc64f2b",
-    "pre_install": [
-        "$scriptdir = \"$bucketsdir\\$bucket\\scripts\"",
-        "if ($architecture -eq '64bit') {",
-        "    (Get-Content \"$scriptdir\\microsoft-365-beta\\install-$app.xml\").Replace('{buildNumber}', $version) | Set-Content -Path \"$dir\\install-$app.xml\"",
-        "}",
-        "elseif ($architecture -eq '32bit') {",
-        "    (Get-Content \"$scriptdir\\microsoft-365-beta\\install-$app.xml\").Replace('{buildNumber}', $version).Replace('64', '32') | Set-Content -Path \"$dir\\install-$app.xml\"",
-        "}",
-        "Copy-Item \"$scriptdir\\microsoft-365-beta\\uninstall-microsoft-365.xml\" \"$dir\\\""
-    ],
+    "pre_install": ".\\scripts\\microsoft-365-beta\\pre_install.ps1",
     "installer": {
-        "script": [
-            "Start-Process -Wait 7z1900-helper -ArgumentList @('x', '-bso0', \"`\"$dir\\dl.7z_`\"\", \"`\"-o$dir`\"\")",
-            "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/configure', \"`\"$dir\\install-$app.xml`\"\")"
-        ]
+        "script": ".\\scripts\\microsoft-365-beta\\installer-script.ps1"
     },
     "uninstaller": {
-        "script": "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/configure', \"`\"$dir\\uninstall-microsoft-365.xml`\"\")"
+        "script": ".\\scripts\\microsoft-365-beta\\uninstaller-script.ps1"
     },
     "checkver": {
         "script": ".\\scripts\\microsoft-365-beta\\checkver-script.ps1",
