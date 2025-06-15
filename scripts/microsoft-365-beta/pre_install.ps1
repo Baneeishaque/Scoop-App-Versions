@@ -1,5 +1,5 @@
-. "$PSScriptRoot\..\scoop-indep-variables.ps1"
-Set-ScoopIndepVariables -SubFolderPath $PSScriptRoot
+. "$PSScriptRoot\..\scoop-variables-for-manifest-script-independent-run.ps1"
+Set-ScoopVariables -SubFolderPath $PSScriptRoot
 
 $scriptdir = "$bucketsdir\$bucket\scripts"
 if (-not (Test-Path -Path $scriptdir)) {

@@ -1,14 +1,14 @@
 # region: Scoop-independent variable definitions
-function Set-ScoopIndepVariables {
+function Set-ScoopVariables {
     param(
         [Parameter(Mandatory = $true)]
         [string]$SubFolderPath
     )
-    if ($script:ScoopIndepVariablesInitialized) {
-        Write-Host 'ScoopIndepVariables already initialized, skipping.'
+    if ($script:ScoopVariablesInitialized) {
+        Write-Host 'ScoopVariables already initialized, skipping.'
         return
     }
-    $script:ScoopIndepVariablesInitialized = $true
+    $script:ScoopVariablesInitialized = $true
     if (-not (Get-Variable -Name bucketsdir -Scope Script -ErrorAction SilentlyContinue)) {
         $script:bucketsdir = Resolve-Path (Join-Path $PSScriptRoot '..')
     }

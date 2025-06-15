@@ -1,4 +1,4 @@
-function Initialize-Prereq {
+function Initialize-InstallerScriptPrerequisites {
     param(
         [Parameter(Mandatory = $true)]
         [string]$DirPath
@@ -42,7 +42,7 @@ function Initialize-Prereq {
 
     # Download using scoop (force, no update, use manifest)
     Write-Host "Downloading $script:app using scoop..."
-    scoop download "$manifestPath" -f -u | Write-Host
+    scoop download "$manifestPath" --force --no-update-scoop | Write-Host
 
     # Find scoop root and cache folder
     $scoopRoot = (scoop prefix scoop) -replace '\\apps\\scoop.*$', ''

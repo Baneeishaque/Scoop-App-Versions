@@ -1,4 +1,4 @@
-. "$PSScriptRoot\..\scoop-indep-variables.ps1"
+. "$PSScriptRoot\..\scoop-variables-for-manifest-script-independent-run.ps1"
 
 $ranInit = $false
 $preInstallScriptPath = Join-Path $PSScriptRoot 'pre_install.ps1'
@@ -17,7 +17,7 @@ if (Test-Path $installerScriptPath) {
 }
 
 if (-not $ranInit) {
-    Set-ScoopIndepVariables -SubFolderPath $PSScriptRoot
+    Set-ScoopVariables -SubFolderPath $PSScriptRoot
 }
 
 Start-Process -Wait "$dir\setup.exe" -ArgumentList @('/configure', "`"$dir\uninstall-microsoft-365.xml`"")
