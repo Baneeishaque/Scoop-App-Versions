@@ -4,6 +4,11 @@ function Set-ScoopIndepVariables {
         [Parameter(Mandatory = $true)]
         [string]$SubFolderPath
     )
+    if ($script:ScoopIndepVariablesInitialized) {
+        Write-Host 'ScoopIndepVariables already initialized, skipping.'
+        return
+    }
+    $script:ScoopIndepVariablesInitialized = $true
     if (-not (Get-Variable -Name bucketsdir -Scope Script -ErrorAction SilentlyContinue)) {
         $script:bucketsdir = Resolve-Path (Join-Path $PSScriptRoot '..')
     }
