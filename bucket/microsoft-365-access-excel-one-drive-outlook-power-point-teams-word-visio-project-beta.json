@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1090",
+    "version": "19107.20000",
     "description": "Family of client software, server software and services developed by Microsoft.",
     "homepage": "https://www.office.com/",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://www.microsoft.com/licensing/terms/productoffering/OfficeDesktopApplicationsWindows/MCA"
     },
     "depends": "7zip19.00-helper",
-    "url": "https://download.microsoft.com/download/#/dl.7z_",
-    "hash": "3a6d0b7cf2e27ae3939cfbbe0748bb322e4e3ecc0f481c0328376ac9cf3a90de",
+    "url": "https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_18827-20140.exe#/dl.7z_",
+    "hash": "d7913f3b6bb7a338bb3e9d491236d6344fd88fb7e882026f0a377b801674273a",
     "pre_install": ".\\scripts\\microsoft-365-beta\\pre_install.ps1",
     "installer": {
         "script": ".\\scripts\\microsoft-365-beta\\installer-script.ps1"
