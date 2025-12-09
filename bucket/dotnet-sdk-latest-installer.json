@@ -1,5 +1,5 @@
 {
-    "version": "10.0.100",
+    "version": "10.0.101",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100/dotnet-sdk-10.0.100-win-x64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:e9920ce4b9b2fa3ce63a35f288080bb8d2b7f5bfbf2d51588276f81eddc8858254760f172aa1d0a7211a98378816c6e8bb17b59f4844db8456988ad10a557ca9"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.101/dotnet-sdk-10.0.101-win-x64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:e3be75e1efee27e2c17c9e1ec68eaf9e281cb092555c5ac7cb244670239055da654ee058576fae76ccc8756551655a56a13d4b8cc0888cf24c123ee91a4e6330"
         },
         "32bit": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100/dotnet-sdk-10.0.100-win-x86.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:dce046f4104ef10d528a9e710cbd8f3fd6b1f4d9ab2ebf3a6889d781a367b5f9ae33fb3fed0d1431ced435aa4d2cd477671ab42e30d03475148012c4d081460c"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.101/dotnet-sdk-10.0.101-win-x86.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:908520f1ae6ab0b6df2abddd16ae85dec6771c9b6075796e1de07e6aa747dfeadb3795861575e4b492ce868af40bf4d93756fba24c0ea8203abe318355701c06"
         },
         "arm64": {
-            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.100/dotnet-sdk-10.0.100-win-arm64.exe#/dotnet-sdk-latest-win.exe",
-            "hash": "sha512:893902155e247f2d8cd7ffebfc7e05207854b1bc02beb29a7b34c72ef4fbece725cead8ed0970b28c4a6a495cbaff967a8b824930669d5b59408f32e0c431152"
+            "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/10.0.101/dotnet-sdk-10.0.101-win-arm64.exe#/dotnet-sdk-latest-win.exe",
+            "hash": "sha512:03f84f7248d9d82ff550b700db51fa1f99926361d60995feba83524e00d084b6da1dc61355accbd048bd2e554eeb09dc907ec41496f8a9ce630cbd61ef986bb1"
         }
     },
     "installer": {
