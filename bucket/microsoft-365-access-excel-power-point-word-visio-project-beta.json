@@ -1,5 +1,5 @@
 {
-    "version": "19617.20000",
+    "version": "1.0.795",
     "description": "Family of client software, server software and services developed by Microsoft.",
     "homepage": "https://www.office.com/",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://www.microsoft.com/licensing/terms/productoffering/OfficeDesktopApplicationsWindows/MCA"
     },
     "depends": "7zip19.00-helper",
-    "url": "https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_19426-20170.exe#/dl.7z_",
-    "hash": "c96332fb466b78e54e918698ca089f0b01eb87336b5c446cb631fd4ab832f2b6",
+    "url": "https://download.microsoft.com/download/#/dl.7z_",
+    "hash": "62fd809e63ff15b8b3f41d3136c84dcd8e7631395d269109ff960bef3c1ed313",
     "pre_install": [
         "$scriptdir = \"$bucketsdir\\$bucket\\scripts\"",
         "if ($architecture -eq '64bit') {",
