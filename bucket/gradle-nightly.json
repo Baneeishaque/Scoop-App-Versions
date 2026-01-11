@@ -1,14 +1,14 @@
 {
-    "version": "9.4.0-20260101005915+0000",
+    "version": "9.4.0-20260111022403+0000",
     "description": "An open-source build automation tool focused on flexibility and performance. (Source code and documentation bundled)",
     "homepage": "https://gradle.org",
     "license": "Apache-2.0",
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://services.gradle.org/distributions-snapshots/gradle-9.4.0-20260101005915+0000-all.zip",
-    "hash": "8863b8b752cfe30e611c46fc4f37ec4bffc8b6d2abea28c49635554fd9dd305a",
-    "extract_dir": "gradle-9.4.0-20260101005915+0000",
+    "url": "https://services.gradle.org/distributions-snapshots/gradle-9.4.0-20260111022403+0000-all.zip",
+    "hash": "5f2a03cee0caacc05eff1c7869f71f336bccc949af25447aa1537002a37ef49b",
+    "extract_dir": "gradle-9.4.0-20260111022403+0000",
     "post_install": [
         "$current_env = env GRADLE_USER_HOME $global",
         "If ($null -eq $current_env) {",
