@@ -1,12 +1,12 @@
 {
-    "version": "0.0.1-nightly2026022101",
+    "version": "0.0.1-nightly2026022201",
     "description": "A decentralised, encrypted chat & collaboration powered by matrix.org",
     "homepage": "https://element.io",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://packages.element.io/nightly/update/win32/x64/element-desktop-nightly-0.0.1-nightly2026022101-full.nupkg",
-            "hash": "sha1:9ed1b3c3eb1bfae85d47bbedc1ae7ea6cccb49e8"
+            "url": "https://packages.element.io/nightly/update/win32/x64/element-desktop-nightly-0.0.1-nightly2026022201-full.nupkg",
+            "hash": "sha1:be93c808cbb2fbbc21f8362837875a6e480cceac"
         }
     },
     "extract_dir": "lib\\net45",
