@@ -1,5 +1,5 @@
 {
-    "version": "261.22158.190",
+    "version": "261.22158.273",
     "description": "Cross-Platform IDE for C and C++ by JetBrains. (Latest)",
     "homepage": "https://www.jetbrains.com/clion/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/cpp/CLion-261.22158.190.win.zip",
-            "hash": "408d070a43c13873d62fa7ba097744e62c03136c8012cfa85974ac90da3a231a",
+            "url": "https://download.jetbrains.com/cpp/CLion-2026.1.win.zip",
+            "hash": "2deadaaceaa4c18c73fc90911727e276fae4021023bb096b9b9225242d31fb12",
             "bin": [
                 [
                     "IDE\\bin\\clion64.exe",
