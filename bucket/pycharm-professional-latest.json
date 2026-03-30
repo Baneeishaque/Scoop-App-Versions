@@ -1,5 +1,5 @@
 {
-    "version": "261.22158.220",
+    "version": "261.22158.340",
     "description": "Cross-Platform IDE for Python by JetBrains (Latest).",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
@@ -15,8 +15,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/python/pycharm-professional-261.22158.220.exe#/dl.7z",
-            "hash": "0767663799728ae24d7c23b0fb5607c11e9683cecd5c70696927c222ca208d80",
+            "url": "https://download.jetbrains.com/python/pycharm-professional-2026.1.exe#/dl.7z",
+            "hash": "be4beafe462137a7afe55066d33e64ec759469bea676527c0b03cf94cdf6c1c9",
             "bin": [
                 [
                     "IDE\\bin\\pycharm64.exe",
