@@ -1,0 +1,436 @@
+# Instincts generated from https://github.com/Baneeishaque/Scoop-App-Versions
+# Generated: 2026-04-01T03:50:46.443Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Scoop-App-Versions-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Commit Length
+
+## Action
+
+Write moderate-length commit messages (~66 characters)
+
+## Evidence
+
+- Average commit message length: 66 chars
+- Based on 200 commits
+
+---
+id: Scoop-App-Versions-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: Scoop-App-Versions-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Scoop-App-Versions-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Scoop-App-Versions-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Scoop-App-Versions-workflow-update-app-version-json
+trigger: "when doing update app version json"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Workflow Update App Version Json
+
+## Action
+
+Follow the update-app-version-json workflow:
+1. Identify the application to update.
+2. Edit the corresponding 'bucket/{app-name}.json' file to update the version and possibly the download URL/hash.
+3. Commit the change with a message indicating the app and new version.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~60x per month
+- Files: bucket/*.json
+
+---
+id: Scoop-App-Versions-workflow-update-nightly-build-json
+trigger: "when doing update nightly build json"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Workflow Update Nightly Build Json
+
+## Action
+
+Follow the update-nightly-build-json workflow:
+1. Check for new nightly/daily build version.
+2. Edit the corresponding 'bucket/{nightly-app}.json' file to reflect the new build version.
+3. Commit with a message indicating the app and new build version.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~20x per month
+- Files: bucket/*nightly*.json, bucket/*daily*.json
+
+---
+id: Scoop-App-Versions-workflow-update-microsoft-365-beta-json
+trigger: "when doing update microsoft 365 beta json"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Workflow Update Microsoft 365 Beta Json
+
+## Action
+
+Follow the update-microsoft-365-beta-json workflow:
+1. Detect new beta/preview version for Microsoft 365 suite.
+2. Edit the relevant 'bucket/microsoft-365-*.json' file(s) to update the version.
+3. Commit with a message specifying the suite and version.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~15x per month
+- Files: bucket/microsoft-365-access-excel-power-point-word-visio-project-beta.json, bucket/microsoft-365-access-excel-one-drive-outlook-power-point-teams-word-visio-project-beta.json
+
+---
+id: Scoop-App-Versions-workflow-update-discord-installer-json
+trigger: "when doing update discord installer json"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Workflow Update Discord Installer Json
+
+## Action
+
+Follow the update-discord-installer-json workflow:
+1. Check for new Discord installer version.
+2. Edit the corresponding 'bucket/discord-*-installer.json' file to update the version.
+3. Commit with a message indicating the installer and version.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~10x per month
+- Files: bucket/discord-canary-x64-installer.json, bucket/discord-ptb-x64-installer.json
+
+---
+id: scoop-app-versions-instinct-file-naming
+trigger: "When creating or renaming a file in the repository"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct File Naming
+
+## Action
+
+Use kebab-case for file names (e.g., my-file-name.ts)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- All manifest files in 'bucket/' use kebab-case
+
+---
+id: scoop-app-versions-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., updateVersion)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: scoop-app-versions-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., AppUpdater)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: scoop-app-versions-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names (e.g., DEFAULT_PATH)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: scoop-app-versions-instinct-import-style
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Import Style
+
+## Action
+
+Use relative import paths (e.g., import x from './module')
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: scoop-app-versions-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Export Style
+
+## Action
+
+Use named exports (e.g., export { myFunction })
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: scoop-app-versions-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- architecture.folderStructure.testLocation is 'separate'
+
+---
+id: scoop-app-versions-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Commit Format
+
+## Action
+
+Format the commit message as '<app-name>: Update to version <version>'
+
+## Evidence
+
+- Seen in commits: 'netbeans-daily: Update to version ...', 'discord-canary-x64-installer: Update to version ...'
+- Pattern in commit examples
+
+---
+id: scoop-app-versions-instinct-update-app-version
+trigger: "When a new version of an application is released and needs to be reflected in the Scoop bucket"
+confidence: 0.99
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Update App Version
+
+## Action
+
+Edit 'bucket/{app-name}.json' to update version and commit with '<app-name>: Update to version <version>'
+
+## Evidence
+
+- Workflow: update-app-version-json
+- Seen in commit: 'microsoft-365-access-excel-power-point-word-visio-project-beta: Update to version 19929.20000'
+
+---
+id: scoop-app-versions-instinct-update-nightly-build
+trigger: "When a new nightly/daily build is available for an application tracked in the bucket"
+confidence: 0.97
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Update Nightly Build
+
+## Action
+
+Edit 'bucket/{nightly-app}.json' to update the build version and commit with '<app-name>: Update to version <version>'
+
+## Evidence
+
+- Workflow: update-nightly-build-json
+- Seen in commit: 'gradle-nightly: Update to version 9.6.0-20260401005822+0000'
+
+---
+id: scoop-app-versions-instinct-update-m365-beta
+trigger: "When Microsoft releases a new beta/preview version for its 365 suite"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Update M365 Beta
+
+## Action
+
+Edit relevant 'bucket/microsoft-365-*.json' files to update version and commit with suite and version in message
+
+## Evidence
+
+- Workflow: update-microsoft-365-beta-json
+- Seen in commit: 'microsoft-365-access-excel-power-point-word-visio-project-beta: Update to version 19929.20000'
+
+---
+id: scoop-app-versions-instinct-update-discord-installer
+trigger: "When a new version of a Discord installer (canary, ptb) is released"
+confidence: 0.93
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Scoop-App-Versions
+---
+
+# Scoop App Versions Instinct Update Discord Installer
+
+## Action
+
+Edit 'bucket/discord-*-installer.json' to update version and commit with installer and version in message
+
+## Evidence
+
+- Workflow: update-discord-installer-json
+- Seen in commit: 'discord-canary-x64-installer: Update to version 1.0.891'
+
